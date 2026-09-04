@@ -13,11 +13,9 @@ SITE_URL = "https://africastudyconnect.com"
 #  BINDINGS, à décommenter APRÈS avoir créé les ressources
 # ══════════════════════════════════════════════════════════════════════════
 #
-#  Ces blocs sont volontairement commentés : un database_id absent ou
-#  invalide fait échouer le build Cloudflare Pages, et donc le déploiement
-#  du site entier. Tant qu'ils sont commentés, le site se déploie
-#  normalement et le formulaire répond « service indisponible » plutôt que
-#  de planter.
+#  Ressources créées et liées. Ne pas remettre en commentaire : le
+#  formulaire cesserait de collecter et répondrait « service
+#  indisponible ».
 #
 #  1. Créer la base :   npx wrangler d1 create africastudy-leads
 #  2. Recopier le database_id renvoyé ci-dessous
@@ -26,14 +24,14 @@ SITE_URL = "https://africastudyconnect.com"
 #  5. Déclarer aussi les bindings DB et R2 dans le tableau de bord :
 #     Cloudflare Pages → Settings → Functions → Bindings
 #
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "africastudy-leads"
-# database_id = "VOTRE_DATABASE_ID"
-#
-# [[r2_buckets]]
-# binding = "R2"
-# bucket_name = "africastudy-documents"
+[[d1_databases]]
+binding = "DB"
+database_name = "africastudy-leads"
+database_id = "2feca2b1-e38c-4443-bab1-b588df458458"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "africastudy-documents"
 
 # ── Secrets (ne jamais les écrire ici) ────────────────────────────────────
 # npx wrangler pages secret put RESEND_API_KEY
