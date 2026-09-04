@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 44" role="img"
+     aria-label="AfricaStudy Connect">
+  <title>AfricaStudy Connect</title>
+  <g transform="translate(2 2)">
+    <rect width="40" height="40" rx="9" fill="#1e293b"/>
+    <path d="M10 30 C10 18.5 17.5 11.5 30 11" fill="none" stroke="#ffffff"
+          stroke-width="3.4" stroke-linecap="round"/>
+    <circle cx="10" cy="30" r="3.2" fill="#60a5fa"/>
+    <circle cx="30" cy="11" r="4.2" fill="#f59e0b"/>
+  </g>
+  <!-- un seul bloc de texte : l'espacement suit la police, sans position codée en dur -->
+  <text x="54" y="29" font-family="Inter, Poppins, Helvetica, Arial, sans-serif"
+        font-size="21" font-weight="800" fill="#1e293b" xml:space="preserve">AfricaStudy <tspan fill="#2563eb">Connect</tspan></text>
+</svg>

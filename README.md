@@ -70,7 +70,13 @@ grep -rn "todo-flag" --include="*.html" .
 │   └── modele-article.html         Gabarit à dupliquer pour publier
 ├── assets/
 │   ├── styles.css                  Feuille de style unique, partagée
-│   └── app.js                      Menu, compteurs, formulaire, upload
+│   ├── app.js                      Menu, compteurs, formulaire, upload
+│   ├── logo.svg                    Verrouillage horizontal (documents, signature)
+│   ├── logo-mark.svg               Marque seule
+│   ├── favicon.svg                 Variante épaissie, lisible à 16 px
+│   ├── apple-touch-icon.png        Icône iOS 180 × 180
+│   ├── og-image.png                Aperçu de partage 1200 × 630
+│   └── img/                        Photographies des articles
 ├── functions/api/                  Backend serverless (Pages Functions)
 │   ├── _shared.js                  Réponses JSON, validation, envoi d'e-mail
 │   ├── submit.js                   POST — enregistre une demande
@@ -108,6 +114,19 @@ python3 tools/sync-faq-jsonld.py
 Régénère les données structurées à partir de la FAQ visible. Google n'accorde le résultat enrichi que si les deux correspondent exactement.
 
 ---
+
+## Identité visuelle
+
+La marque figure une trajectoire ascendante entre un point de départ et une destination — la « passerelle » de la signature du cabinet. Elle remplace le mortier de diplômé générique utilisé auparavant.
+
+| Fichier | Usage |
+|---|---|
+| `assets/logo.svg` | Verrouillage horizontal, marque et nom. Pour les documents, une signature d'e-mail, un support imprimé. |
+| `assets/logo-mark.svg` | Marque seule, à partir de 24 px. |
+| `assets/favicon.svg` | Variante au trait épaissi et sans point de départ : à 16 px, le tracé fin devient illisible. |
+| `assets/apple-touch-icon.png` | Icône d'écran d'accueil iOS, 180 × 180. |
+
+Couleurs : fond `#1e293b`, tracé blanc, point de départ `#60a5fa`, destination `#f59e0b`. La marque est intégrée en SVG directement dans l'en-tête des pages — aucune requête réseau, aucun risque d'image manquante.
 
 ## Mise en place du backend
 

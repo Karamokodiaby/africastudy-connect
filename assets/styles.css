@@ -1859,3 +1859,21 @@ button[disabled] {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
+
+/* Marque dans l'en-tête */
+.logo-mark {
+    flex-shrink: 0;
+    display: block;
+    border-radius: 7px;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 17px;
+        gap: 7px;
+    }
+    .logo-mark {
+        width: 26px;
+        height: 26px;
+    }
+}
