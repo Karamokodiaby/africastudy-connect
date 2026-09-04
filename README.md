@@ -6,6 +6,11 @@ Hébergé sur **Cloudflare Pages**, avec un backend serverless **Pages Functions
 
 ---
 
+## Adresses
+
+- **Production** : https://africastudyconnect.com
+- **Aperçu Cloudflare** : https://africastudy-connect.pages.dev (reste accessible, mais les balises canoniques pointent toutes vers le domaine de production)
+
 ## État du site
 
 Les informations légales du cabinet sont renseignées : entrepreneur individuel Karamoko DIABY, exerçant sous le nom commercial AfricaStudy Connect, 11B avenue Auguste Rodin, 94350 Villiers-sur-Marne, non assujetti à la TVA.
@@ -43,7 +48,7 @@ L'option Admission Post-Bac (343 € / 225 000 FCFA) n'est pas concernée.
 - **Image de partage** — créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook des pages autres que les fiches de villes affichent un aperçu vide.
 - **Section « À propos »** — ajouter les photos de l'équipe et du bureau, et l'histoire du cabinet.
 - **Pages destinations** — y porter les données chiffrées vérifiées chaque année (frais de scolarité, budget de vie, ressources à justifier). C'est ce qui fait leur valeur en référencement.
-- **Nom de domaine** — le site pointe partout vers `africastudy-connect.pages.dev`. La bascule vers le domaine définitif se fait en une commande :
+- **Nom de domaine** — le site pointe partout vers `africastudyconnect.com`. La bascule vers le domaine définitif se fait en une commande :
   ```bash
   python3 tools/basculer-domaine.py africastudyconnect.com
   ```
@@ -198,7 +203,9 @@ C'est l'étape la plus souvent oubliée. `wrangler.toml` suffit en local, mais P
 npm run dev
 ```
 
-Le site est servi sur `http://localhost:8788`, avec une base D1 et un bucket R2 locaux. Pour les secrets en local, copiez `.dev.vars.example` en `.dev.vars` et renseignez vos valeurs — ce fichier est ignoré par git.
+Le site est servi sur `http://localhost:8788`, avec une base D1 et un bucket R2 locaux.
+
+**Utilisez cette commande, pas un serveur statique quelconque.** Cloudflare Pages sert les pages sans l'extension `.html` — `/mentions-legales` et non `/mentions-legales.html` — et redirige la seconde forme vers la première. Les liens internes du site sont écrits sans extension, en conséquence. Un `python -m http.server` ne reproduit pas cette réécriture et renverrait des erreurs 404 sur toute la navigation interne&nbsp;; `wrangler pages dev` la reproduit fidèlement. Pour les secrets en local, copiez `.dev.vars.example` en `.dev.vars` et renseignez vos valeurs — ce fichier est ignoré par git.
 
 Première utilisation, créez le schéma local :
 
@@ -220,7 +227,7 @@ Ou via l'API, avec le jeton d'administration :
 
 ```bash
 curl -H "Authorization: Bearer $ADMIN_TOKEN" \
-     "https://africastudy-connect.pages.dev/api/leads?limit=50"
+     "https://africastudyconnect.com/api/leads?limit=50"
 ```
 
 Changer le statut d'une demande (`new`, `contacted`, `qualified`, `converted`, `lost`) :
@@ -229,7 +236,7 @@ Changer le statut d'une demande (`new`, `contacted`, `qualified`, `converted`, `
 curl -X PATCH -H "Authorization: Bearer $ADMIN_TOKEN" \
      -H "Content-Type: application/json" \
      -d '{"id": 1, "status": "contacted"}' \
-     "https://africastudy-connect.pages.dev/api/leads"
+     "https://africastudyconnect.com/api/leads"
 ```
 
 ---

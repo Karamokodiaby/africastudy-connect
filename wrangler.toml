@@ -4,10 +4,10 @@ pages_build_output_dir = "."
 
 [vars]
 # Adresse qui reçoit la notification interne à chaque nouvelle demande.
-NOTIFY_EMAIL = "contact@africastudy-connect.com"
+NOTIFY_EMAIL = "contact@africastudyconnect.com"
 # Expéditeur des e-mails. Le domaine doit être vérifié dans Resend.
-FROM_EMAIL = "AfricaStudy Connect <contact@africastudy-connect.com>"
-SITE_URL = "https://africastudy-connect.pages.dev"
+FROM_EMAIL = "AfricaStudy Connect <contact@africastudyconnect.com>"
+SITE_URL = "https://africastudyconnect.com"
 
 # ══════════════════════════════════════════════════════════════════════════
 #  BINDINGS — à décommenter APRÈS avoir créé les ressources
