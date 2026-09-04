@@ -34,31 +34,45 @@ export function escapeHtml(value) {
 }
 
 /**
- * Envoie un e-mail via l'API Resend.
+ * Découpe « Nom <adresse@domaine> » en { name, email }.
+ * Brevo attend l'expéditeur en deux champs distincts, là où la
+ * configuration le stocke sous sa forme lisible.
+ */
+function expediteur(valeur) {
+    const brut = (valeur || 'AfricaStudy Connect <contact@africastudyconnect.com>').trim();
+    const m = brut.match(/^\s*(.*?)\s*<([^>]+)>\s*$/);
+    if (m) return { name: m[1] || 'AfricaStudy Connect', email: m[2].trim() };
+    return { name: 'AfricaStudy Connect', email: brut };
+}
+
+/**
+ * Envoie un e-mail via l'API transactionnelle de Brevo.
  * Ne lève jamais : un échec d'envoi ne doit pas faire perdre une demande.
  */
 export async function sendEmail(env, { to, subject, html, replyTo }) {
-    if (!env.RESEND_API_KEY) {
-        console.warn('RESEND_API_KEY absente : e-mail non envoyé.');
+    if (!env.BREVO_API_KEY) {
+        console.warn('BREVO_API_KEY absente : e-mail non envoyé.');
         return false;
     }
     try {
-        const res = await fetch('https://api.resend.com/emails', {
+        const destinataires = (Array.isArray(to) ? to : [to]).map((adresse) => ({ email: adresse }));
+        const res = await fetch('https://api.brevo.com/v3/smtp/email', {
             method: 'POST',
             headers: {
-                Authorization: `Bearer ${env.RESEND_API_KEY}`,
-                'Content-Type': 'application/json',
+                'api-key': env.BREVO_API_KEY,
+                'content-type': 'application/json',
+                accept: 'application/json',
             },
             body: JSON.stringify({
-                from: env.FROM_EMAIL || 'AfricaStudy Connect <contact@africastudy-connect.com>',
-                to: Array.isArray(to) ? to : [to],
+                sender: expediteur(env.FROM_EMAIL),
+                to: destinataires,
                 subject,
-                html,
-                ...(replyTo ? { reply_to: replyTo } : {}),
+                htmlContent: html,
+                ...(replyTo ? { replyTo: { email: replyTo } } : {}),
             }),
         });
         if (!res.ok) {
-            console.error('Resend a répondu', res.status, await res.text());
+            console.error('Brevo a répondu', res.status, await res.text());
             return false;
         }
         return true;

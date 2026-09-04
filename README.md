@@ -181,13 +181,17 @@ npx wrangler r2 bucket create africastudy-documents
 
 ### 5. Configurer l'envoi d'e-mails
 
-Créez un compte sur [resend.com](https://resend.com), vérifiez votre domaine d'envoi, puis :
+Les e-mails transactionnels passent par [Brevo](https://www.brevo.com), déjà utilisé pour Daloa360.
+
+Dans Brevo, ajoutez `africastudyconnect.com` comme domaine d'envoi et posez dans le DNS Cloudflare les enregistrements DKIM et SPF qu'il indique. Cette vérification est indispensable : sans elle, Brevo refuse d'envoyer depuis `contact@africastudyconnect.com`.
+
+Créez ensuite une clé d'API dans Brevo, rubrique SMTP & API, puis :
 
 ```bash
-npx wrangler pages secret put RESEND_API_KEY
+npx wrangler pages secret put BREVO_API_KEY
 ```
 
-Sans cette clé, les demandes sont bien enregistrées mais aucun e-mail n'est envoyé, ni au candidat, ni au cabinet.
+Sans cette clé, les demandes sont bien enregistrées mais aucun e-mail n'est envoyé, ni au candidat, ni au cabinet. Le formulaire continue de fonctionner : l'envoi est volontairement hors du chemin critique.
 
 ### 6. Protéger la consultation des demandes
 

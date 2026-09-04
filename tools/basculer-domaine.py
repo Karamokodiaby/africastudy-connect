@@ -127,7 +127,7 @@ def main():
         print()
         print("  Il reste à faire, hors dépôt :")
         print("     • créer la boîte contact@" + nouveau)
-        print("     • vérifier le domaine dans Resend (sinon aucun e-mail ne partira)")
+        print("     • vérifier le domaine dans Brevo (sinon aucun e-mail ne partira)")
         print("     • ajouter le domaine personnalisé dans Cloudflare Pages")
         print("     • soumettre le nouveau sitemap dans Google Search Console")
         print("     • si l'ancien domaine est conservé, le rediriger en 301")

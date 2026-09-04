@@ -3,5 +3,5 @@
 # En production, ces valeurs se définissent avec :
 #   npx wrangler pages secret put NOM_DU_SECRET
 
-RESEND_API_KEY=re_votre_cle_ici
+BREVO_API_KEY=xkeysib-votre_cle_ici
 ADMIN_TOKEN=un_jeton_long_et_aleatoire
