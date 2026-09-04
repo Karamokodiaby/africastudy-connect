@@ -1,0 +1,18 @@
+{
+  "name": "africastudy-connect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site AfricaStudy Connect — accompagnement aux études internationales",
+  "scripts": {
+    "dev": "wrangler pages dev . --d1 DB=africastudy-leads --r2 R2=africastudy-documents --port 8788",
+    "deploy": "wrangler pages deploy .",
+    "db:create": "wrangler d1 create africastudy-leads",
+    "db:migrate": "wrangler d1 migrations apply africastudy-leads --remote",
+    "db:migrate:local": "wrangler d1 migrations apply africastudy-leads --local",
+    "db:leads": "wrangler d1 execute africastudy-leads --remote --command \"SELECT id, created_at, name, email, destination, status FROM leads ORDER BY created_at DESC LIMIT 20\"",
+    "r2:create": "wrangler r2 bucket create africastudy-documents"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

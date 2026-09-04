@@ -1,0 +1,11 @@
+# robots.txt — AfricaStudy Connect
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /404.html
+Disallow: /500.html
+
+# Les moteurs peuvent explorer sans limite de cadence
+Crawl-delay: 0
+
+Sitemap: https://africastudy-connect.pages.dev/sitemap.xml
