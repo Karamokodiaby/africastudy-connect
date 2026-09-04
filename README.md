@@ -43,10 +43,11 @@ L'option Admission Post-Bac (343 € / 225 000 FCFA) n'est pas concernée.
 - **Image de partage** — créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook des pages autres que les fiches de villes affichent un aperçu vide.
 - **Section « À propos »** — ajouter les photos de l'équipe et du bureau, et l'histoire du cabinet.
 - **Pages destinations** — y porter les données chiffrées vérifiées chaque année (frais de scolarité, budget de vie, ressources à justifier). C'est ce qui fait leur valeur en référencement.
-- **Nom de domaine** — le site pointe partout vers `africastudy-connect.pages.dev`. Pour basculer sur `africastudy-connect.com` :
+- **Nom de domaine** — le site pointe partout vers `africastudy-connect.pages.dev`. La bascule vers le domaine définitif se fait en une commande :
   ```bash
-  grep -rl "africastudy-connect.pages.dev" --include="*.html" --include="*.xml" --include="*.txt" --include="*.toml" . | xargs sed -i '' 's|africastudy-connect\.pages\.dev|africastudy-connect.com|g'
+  python3 tools/basculer-domaine.py africastudyconnect.com
   ```
+  Le script traite les 335 occurrences réparties dans 29 fichiers — balises canoniques, sitemap, données structurées, images de partage, adresse e-mail et variables du backend. Il refuse d'écrire tant que le domaine ne résout pas, car pointer les canoniques vers une adresse injoignable empêcherait Google d'indexer le site. Ajoutez `--simulation` pour voir ce qui changerait sans rien écrire.
 
 Les rappels restants dans les pages se retrouvent avec :
 
@@ -79,7 +80,8 @@ grep -rn "todo-flag" --include="*.html" .
 ├── tools/
 │   ├── sync-faq-jsonld.py          Régénère le JSON-LD depuis la FAQ visible
 │   ├── stamp-assets.py             Versionne les liens CSS/JS (cache navigateur)
-│   └── README-images.md            Format, poids, sources légales des images
+│   ├── README-images.md            Format, poids, sources légales des images
+│   └── basculer-domaine.py         Migration vers le domaine définitif
 ├── _headers                        En-têtes de sécurité
 ├── robots.txt / sitemap.xml
 └── wrangler.toml
