@@ -6,33 +6,38 @@ Hébergé sur **Cloudflare Pages**, avec un backend serverless **Pages Functions
 
 ---
 
-## À faire avant la mise en ligne
+## État du site
 
-Ces points bloquent une mise en production propre. Ils sont signalés dans les pages par un encadré orange `À compléter`.
+Les informations légales du cabinet sont renseignées : entrepreneur individuel Karamoko DIABY, exerçant sous le nom commercial AfricaStudy Connect, 11B avenue Auguste Rodin, 94350 Villiers-sur-Marne, non assujetti à la TVA.
 
-| # | Élément | Où | Pourquoi c'est bloquant |
-|---|---|---|---|
-| 1 | Raison sociale, forme juridique, adresse du siège, directeur de la publication | `mentions-legales.html` | Mentions légales incomplètes = sans valeur juridique |
-| 2 | Identité du responsable de traitement, durées de conservation réelles | `politique-confidentialite.html` | Obligation RGPD |
-| 3 | Politique de remboursement en cas de refus de visa, échéancier de paiement, médiateur | `conditions-generales.html` | Engage votre responsabilité contractuelle |
-| 4 | Adresse physique | `index.html` + toutes les pages (bloc `footer-address`) | Élément de confiance pour les familles qui paient jusqu'à 3 500 € |
-| 5 | Faire relire les trois documents légaux par un juriste | — | Ce sont des trames, pas des contrats prêts à l'emploi |
+Il reste deux choses avant que le site soit pleinement opérationnel.
 
-Les emplacements à remplir se repèrent d'un coup :
+### 1. Provisionner le backend
 
-```bash
-grep -rn "À COMPLÉTER\|A_COMPLETER\|todo-flag" --include="*.html" .
-```
+Sans cela, **le formulaire n'enregistre aucune demande**. Les sept étapes sont détaillées plus bas, section « Mise en place du backend ».
 
-Deux autres réglages, non bloquants mais à faire rapidement :
+### 2. Faire relire les documents juridiques
+
+Les mentions légales, la politique de confidentialité et les conditions générales de vente ont été rédigées avec soin et sont cohérentes entre elles, mais elles n'ont pas été validées par un juriste. Deux articles engagent directement la responsabilité du cabinet :
+
+- **Article 8 des CGV** — garantie en cas de refus de visa, avec un remboursement chiffré à 30 % après deux campagnes.
+- **Article 7 des CGV** — rétractation. Cet article ne produit son effet que si **le contrat signé par le client comporte la mention de demande d'exécution immédiate**. Sans elle, un client peut se rétracter avec remboursement intégral pendant quatorze jours.
+
+### Améliorations facultatives
 
 - **Image de partage** — créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook affichent un aperçu vide.
-- **Nom de domaine** — le site pointe partout vers `africastudy-connect.pages.dev`. Si vous branchez `africastudy-connect.com`, remplacez l'URL d'un coup :
+- **Section « À propos »** — ajouter les photos de l'équipe et du bureau, et l'histoire du cabinet.
+- **Pages destinations** — y porter les données chiffrées vérifiées chaque année (frais de scolarité, budget de vie, ressources à justifier). C'est ce qui fait leur valeur en référencement.
+- **Nom de domaine** — le site pointe partout vers `africastudy-connect.pages.dev`. Pour basculer sur `africastudy-connect.com` :
   ```bash
   grep -rl "africastudy-connect.pages.dev" --include="*.html" --include="*.xml" --include="*.txt" --include="*.toml" . | xargs sed -i '' 's|africastudy-connect\.pages\.dev|africastudy-connect.com|g'
   ```
 
----
+Les rappels restants dans les pages se retrouvent avec :
+
+```bash
+grep -rn "todo-flag" --include="*.html" .
+```
 
 ## Structure
 
@@ -56,6 +61,8 @@ Deux autres réglages, non bloquants mais à faire rapidement :
 │   ├── upload.js                   POST — dépôt de document dans R2
 │   └── leads.js                    GET/PATCH — consultation (protégé)
 ├── migrations/                     Schéma D1
+├── tools/
+│   └── sync-faq-jsonld.py          Régénère le JSON-LD depuis la FAQ visible
 ├── _headers                        En-têtes de sécurité
 ├── robots.txt / sitemap.xml
 └── wrangler.toml
