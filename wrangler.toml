@@ -2,26 +2,38 @@ name = "africastudy-connect"
 compatibility_date = "2026-09-01"
 pages_build_output_dir = "."
 
-# ── Base de données des demandes (Cloudflare D1) ──────────────────────────
-# Créer avec :  npx wrangler d1 create africastudy-leads
-# puis recopier ici le database_id renvoyé par la commande.
-[[d1_databases]]
-binding = "DB"
-database_name = "africastudy-leads"
-database_id = "REMPLACER_PAR_VOTRE_DATABASE_ID"
-
-# ── Stockage des documents (Cloudflare R2) ────────────────────────────────
-# Créer avec :  npx wrangler r2 bucket create africastudy-documents
-[[r2_buckets]]
-binding = "R2"
-bucket_name = "africastudy-documents"
-
 [vars]
 # Adresse qui reçoit la notification interne à chaque nouvelle demande.
 NOTIFY_EMAIL = "contact@africastudy-connect.com"
 # Expéditeur des e-mails. Le domaine doit être vérifié dans Resend.
 FROM_EMAIL = "AfricaStudy Connect <contact@africastudy-connect.com>"
 SITE_URL = "https://africastudy-connect.pages.dev"
+
+# ══════════════════════════════════════════════════════════════════════════
+#  BINDINGS — à décommenter APRÈS avoir créé les ressources
+# ══════════════════════════════════════════════════════════════════════════
+#
+#  Ces blocs sont volontairement commentés : un database_id absent ou
+#  invalide fait échouer le build Cloudflare Pages, et donc le déploiement
+#  du site entier. Tant qu'ils sont commentés, le site se déploie
+#  normalement et le formulaire répond « service indisponible » plutôt que
+#  de planter.
+#
+#  1. Créer la base :   npx wrangler d1 create africastudy-leads
+#  2. Recopier le database_id renvoyé ci-dessous
+#  3. Créer le bucket : npx wrangler r2 bucket create africastudy-documents
+#  4. Décommenter les deux blocs
+#  5. Déclarer aussi les bindings DB et R2 dans le tableau de bord :
+#     Cloudflare Pages → Settings → Functions → Bindings
+#
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "africastudy-leads"
+# database_id = "VOTRE_DATABASE_ID"
+#
+# [[r2_buckets]]
+# binding = "R2"
+# bucket_name = "africastudy-documents"
 
 # ── Secrets (ne jamais les écrire ici) ────────────────────────────────────
 # npx wrangler pages secret put RESEND_API_KEY
