@@ -23,6 +23,20 @@ Les mentions légales, la politique de confidentialité et les conditions géné
 - **Article 8 des CGV** — garantie en cas de refus de visa, avec un remboursement chiffré à 30 % après deux campagnes.
 - **Article 7 des CGV** — rétractation. Cet article ne produit son effet que si **le contrat signé par le client comporte la mention de demande d'exécution immédiate**. Sans elle, un client peut se rétracter avec remboursement intégral pendant quatorze jours.
 
+### Promotion en cours
+
+Une offre spéciale court **jusqu'au 31 octobre 2026 inclus** :
+
+| Formule | Tarif habituel | Tarif promotionnel | Remise |
+|---|---|---|---|
+| Essentiel | 750 € / 492 000 FCFA | 610 € / 400 000 FCFA | −18,7 % |
+| Confort & Visa | 1 800 € / 1 181 000 FCFA | 1 524 € / 1 000 000 FCFA | −15,3 % |
+| VIP Sérénité | 3 500 € / 2 296 000 FCFA | 2 973 € / 1 950 000 FCFA | −15,1 % |
+
+L'option Admission Post-Bac (343 € / 225 000 FCFA) n'est pas concernée.
+
+**À la fin de la promotion**, il faut retirer le bandeau et les prix barrés — un prix affiché comme réduit en permanence n'est plus une promotion mais le prix réel, et l'annoncer comme une remise est une pratique commerciale trompeuse. Les points à modifier : les cartes tarifaires et le bandeau dans `index.html`, les options du formulaire, le bloc `hasOfferCatalog` des données structurées, et le tableau de l'article 3 des CGV.
+
 ### Améliorations facultatives
 
 - **Image de partage** — créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook affichent un aperçu vide.
@@ -62,13 +76,32 @@ grep -rn "todo-flag" --include="*.html" .
 │   └── leads.js                    GET/PATCH — consultation (protégé)
 ├── migrations/                     Schéma D1
 ├── tools/
-│   └── sync-faq-jsonld.py          Régénère le JSON-LD depuis la FAQ visible
+│   ├── sync-faq-jsonld.py          Régénère le JSON-LD depuis la FAQ visible
+│   └── stamp-assets.py             Versionne les liens CSS/JS (cache navigateur)
 ├── _headers                        En-têtes de sécurité
 ├── robots.txt / sitemap.xml
 └── wrangler.toml
 ```
 
 Le CSS et le JS sont partagés par toutes les pages : une modification de `assets/styles.css` s'applique partout. En revanche l'en-tête et le pied de page sont dupliqués dans chaque fichier HTML — c'est le prix d'un site statique sans build. Si vous modifiez le menu, répercutez-le sur toutes les pages.
+
+### Après toute modification de assets/
+
+```bash
+python3 tools/stamp-assets.py
+```
+
+Les fichiers de `assets/` sont mis en cache une semaine par les navigateurs, comme le demande `_headers`. Sans cette commande, **un visiteur déjà venu sur le site continuerait de voir l'ancien CSS pendant sept jours** : une promotion, un changement de tarif ou une correction d'affichage lui resteraient invisibles.
+
+Le script calcule une empreinte du contenu et l'ajoute aux liens (`styles.css?v=88b035ed`). L'empreinte ne change que si le fichier change, ce qui préserve le bénéfice du cache. À lancer avant chaque déploiement qui touche au CSS ou au JavaScript.
+
+### Après toute modification de la FAQ
+
+```bash
+python3 tools/sync-faq-jsonld.py
+```
+
+Régénère les données structurées à partir de la FAQ visible. Google n'accorde le résultat enrichi que si les deux correspondent exactement.
 
 ---
 

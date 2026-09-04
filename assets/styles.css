@@ -1750,3 +1750,75 @@ button[disabled] {
         scroll-behavior: auto !important;
     }
 }
+
+/* ============================================================
+   PROMOTION — prix barré + prix promotionnel
+   ============================================================ */
+
+/* Bandeau au-dessus de la grille tarifaire */
+.promo-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #991b1b, #b91c1c);
+    color: #fff;
+    border-radius: 8px;
+    padding: 14px 22px;
+    margin-bottom: 26px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+.promo-banner i {
+    font-size: 18px;
+}
+.promo-banner strong {
+    font-size: 16px;
+    font-weight: 700;
+}
+.promo-banner span {
+    font-size: 14px;
+    opacity: .92;
+}
+
+/* Ancien prix, barré en rouge */
+.price-was {
+    font-size: 16px;
+    font-weight: 600;
+    color: #991b1b;
+    text-decoration: line-through;
+    text-decoration-color: #dc2626;
+    text-decoration-thickness: 2px;
+    margin-bottom: 2px;
+}
+.price-cfa .cfa-was {
+    color: #991b1b;
+    text-decoration: line-through;
+    text-decoration-color: #dc2626;
+    text-decoration-thickness: 1.5px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+/* Mention de fin de promotion sous les cartes */
+.promo-note {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 18px;
+}
+.promo-note strong {
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    .promo-banner {
+        flex-direction: column;
+        gap: 6px;
+        padding: 14px 16px;
+    }
+    .promo-banner strong {
+        font-size: 15px;
+    }
+}

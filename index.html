@@ -34,7 +34,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css?v=88b035ed">
 
     <!-- Analytics Plausible (sans cookie, conforme RGPD, aucun bandeau requis).
          Décommenter après avoir créé le site sur plausible.io et adapter data-domain. -->
@@ -52,7 +52,7 @@
       "email": "contact@africastudy-connect.com",
       "telephone": "+33616483558",
       "image": "https://africastudy-connect.pages.dev/assets/og-image.png",
-      "priceRange": "750€ - 3500€",
+      "priceRange": "610€ - 2973€",
       "identifier": {
         "@type": "PropertyValue",
         "name": "SIRET",
@@ -87,22 +87,25 @@
           {
             "@type": "Offer",
             "name": "Essentiel — dossier académique & orientation",
-            "price": "750",
+            "price": "610",
             "priceCurrency": "EUR",
+            "priceValidUntil": "2026-10-31",
             "category": "Accompagnement aux études à l'étranger"
           },
           {
             "@type": "Offer",
             "name": "Confort & Visa — accompagnement complet jusqu'au visa",
-            "price": "1800",
+            "price": "1524",
             "priceCurrency": "EUR",
+            "priceValidUntil": "2026-10-31",
             "category": "Accompagnement aux études à l'étranger"
           },
           {
             "@type": "Offer",
             "name": "VIP Sérénité — prise en charge totale",
-            "price": "3500",
+            "price": "2973",
             "priceCurrency": "EUR",
+            "priceValidUntil": "2026-10-31",
             "category": "Accompagnement aux études à l'étranger"
           }
         ]
@@ -435,6 +438,12 @@
                 <h2 class="section-title">Nos Formules d'Accompagnement</h2>
             </div>
 
+            <div class="promo-banner">
+                <i class="fas fa-tags" aria-hidden="true"></i>
+                <strong>Offre spéciale sur les trois formules</strong>
+                <span>Jusqu'au 31 octobre 2026 inclus</span>
+            </div>
+
             <div class="pricing-grid">
                 <!-- Formule 1 : Essentiel -->
                 <div class="pricing-card">
@@ -443,8 +452,9 @@
                         <p>Dossier académique & orientation</p>
                     </div>
                     <div class="price-box">
-                        <div class="price-main">750 €</div>
-                        <div class="price-cfa">≈ 492 000 FCFA</div>
+                        <div class="price-was">750 €</div>
+                        <div class="price-main">610 €</div>
+                        <div class="price-cfa"><span class="cfa-was">492 000 FCFA</span> ≈ 400 000 FCFA</div>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> Création et structuration de compte</li>
@@ -466,8 +476,9 @@
                         <p>Accompagnement complet jusqu'au visa</p>
                     </div>
                     <div class="price-box">
-                        <div class="price-main">1 800 €</div>
-                        <div class="price-cfa">≈ 1 181 000 FCFA</div>
+                        <div class="price-was">1 800 €</div>
+                        <div class="price-main">1 524 €</div>
+                        <div class="price-cfa"><span class="cfa-was">1 181 000 FCFA</span> ≈ 1 000 000 FCFA</div>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> <strong>Tout le pack Essentiel inclus</strong></li>
@@ -488,8 +499,9 @@
                         <p>Prise en charge totale A à Z</p>
                     </div>
                     <div class="price-box">
-                        <div class="price-main">3 500 €</div>
-                        <div class="price-cfa">≈ 2 296 000 FCFA</div>
+                        <div class="price-was">3 500 €</div>
+                        <div class="price-main">2 973 €</div>
+                        <div class="price-cfa"><span class="cfa-was">2 296 000 FCFA</span> ≈ 1 950 000 FCFA</div>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> <strong>Tous les avantages Confort</strong></li>
@@ -502,6 +514,11 @@
                     <a href="#contact" class="btn-secondary" style="background: var(--primary); text-align: center;">Choisir VIP Sérénité</a>
                 </div>
             </div>
+
+            <p class="promo-note">
+                Prix barrés&nbsp;: tarifs habituellement pratiqués. Offre valable pour toute souscription
+                <strong>jusqu'au 31 octobre 2026 inclus</strong>. Conversion au taux officiel 1&nbsp;€ = 655,957&nbsp;FCFA.
+            </p>
 
             <!-- Option Addon Post-Bac -->
             <div class="addon-box">
@@ -888,9 +905,9 @@
                             <label for="formula">Formule souhaitée *</label>
                             <select id="formula" name="formula" class="form-control" required>
                                 <option value="">Je ne sais pas encore — conseillez-moi</option>
-                                <option value="Essentiel (750 € / 492 000 FCFA)">Essentiel (750 € / 492 000 FCFA)</option>
-                                <option value="Confort &amp; Visa (1 800 € / 1 181 000 FCFA)">Confort &amp; Visa (1 800 € / 1 181 000 FCFA)</option>
-                                <option value="VIP Sérénité (3 500 € / 2 296 000 FCFA)">VIP Sérénité (3 500 € / 2 296 000 FCFA)</option>
+                                <option value="Essentiel (610 € / 400 000 FCFA)">Essentiel — 610 € / 400 000 FCFA</option>
+                                <option value="Confort &amp; Visa (1 524 € / 1 000 000 FCFA)">Confort &amp; Visa — 1 524 € / 1 000 000 FCFA</option>
+                                <option value="VIP Sérénité (2 973 € / 1 950 000 FCFA)">VIP Sérénité — 2 973 € / 1 950 000 FCFA</option>
                             </select>
                             <p class="form-hint">Aucune formule n'est pré-sélectionnée. Le conseiller vous orientera après l'étude de profil.</p>
                         </div>
@@ -1019,6 +1036,6 @@
     </footer>
 
     <!-- Scripts UX / Interactivité -->
-    <script src="/assets/app.js" defer></script>
+    <script src="/assets/app.js?v=d7d30899" defer></script>
 </body>
 </html>
