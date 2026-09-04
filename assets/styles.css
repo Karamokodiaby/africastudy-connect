@@ -1822,3 +1822,40 @@ button[disabled] {
         font-size: 15px;
     }
 }
+
+/* ============================================================
+   IMAGES D'ARTICLE
+   ============================================================ */
+
+.article-figure {
+    margin: 0 0 26px;
+}
+.article-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    background: var(--bg-light);
+}
+.article-figure figcaption {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.article-figure figcaption .credit {
+    display: block;
+    font-size: 12px;
+    opacity: .85;
+    margin-top: 3px;
+}
+.article-figure figcaption .credit a {
+    color: inherit;
+}
+
+/* Illustration de tête, format paysage large */
+.article-figure.hero img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}

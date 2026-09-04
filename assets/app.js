@@ -97,6 +97,24 @@
         counters.forEach(function (el) { observer.observe(el); });
     }
 
+    /* ---------- Images d'article optionnelles ----------
+       Une illustration absente ne doit jamais laisser d'icône cassée :
+       on retire la figure entière. Cela permet de préparer les
+       emplacements dans le HTML avant de disposer des fichiers.
+       Le traitement se fait ici, et non par un attribut onerror, que
+       la Content-Security-Policy du site bloquerait. */
+    document.querySelectorAll('img[data-optional]').forEach(function (img) {
+        var retirer = function () {
+            var figure = img.closest('figure');
+            (figure || img).remove();
+        };
+        if (img.complete && img.naturalWidth === 0) {
+            retirer();
+        } else {
+            img.addEventListener('error', retirer);
+        }
+    });
+
     /* ---------- Notifications ---------- */
     var notifTimer = null;
     function notify(message, type) {

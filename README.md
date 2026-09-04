@@ -39,7 +39,8 @@ L'option Admission Post-Bac (343 € / 225 000 FCFA) n'est pas concernée.
 
 ### Améliorations facultatives
 
-- **Image de partage** — créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook affichent un aperçu vide.
+- **Images des articles** — les sept fiches de villes ont leur emplacement prêt ; il ne reste qu'à déposer les fichiers dans `assets/img/`. Format, poids maximum et sources légales : voir [tools/README-images.md](tools/README-images.md). Tant qu'une image manque, son bloc disparaît automatiquement.
+- **Image de partage** — créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook des pages autres que les fiches de villes affichent un aperçu vide.
 - **Section « À propos »** — ajouter les photos de l'équipe et du bureau, et l'histoire du cabinet.
 - **Pages destinations** — y porter les données chiffrées vérifiées chaque année (frais de scolarité, budget de vie, ressources à justifier). C'est ce qui fait leur valeur en référencement.
 - **Nom de domaine** — le site pointe partout vers `africastudy-connect.pages.dev`. Pour basculer sur `africastudy-connect.com` :
@@ -77,7 +78,8 @@ grep -rn "todo-flag" --include="*.html" .
 ├── migrations/                     Schéma D1
 ├── tools/
 │   ├── sync-faq-jsonld.py          Régénère le JSON-LD depuis la FAQ visible
-│   └── stamp-assets.py             Versionne les liens CSS/JS (cache navigateur)
+│   ├── stamp-assets.py             Versionne les liens CSS/JS (cache navigateur)
+│   └── README-images.md            Format, poids, sources légales des images
 ├── _headers                        En-têtes de sécurité
 ├── robots.txt / sitemap.xml
 └── wrangler.toml
