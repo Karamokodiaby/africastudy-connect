@@ -81,7 +81,8 @@ grep -rn "todo-flag" --include="*.html" .
 │   ├── favicon.svg                 Variante épaissie, lisible à 16 px
 │   ├── apple-touch-icon.png        Icône iOS 180 × 180
 │   ├── og-image.png                Aperçu de partage 1200 × 630
-│   └── img/                        Photographies des articles
+│   ├── img/                        Photographies des articles
+│   └── pub/                        Encarts publicitaires pour sites tiers
 ├── functions/api/                  Backend serverless (Pages Functions)
 │   ├── _shared.js                  Réponses JSON, validation, envoi d'e-mail
 │   ├── submit.js                   POST, enregistre une demande
@@ -93,6 +94,7 @@ grep -rn "todo-flag" --include="*.html" .
 │   ├── stamp-assets.py             Versionne les liens CSS/JS (cache navigateur)
 │   ├── README-images.md            Format, poids, sources légales des images
 │   ├── verifier-tirets.py          Contrôle : aucun tiret cadratin dans le dépôt
+│   ├── generer-publicites.py       Régénère les images de assets/pub/
 │   └── basculer-domaine.py         Migration vers le domaine définitif
 ├── CHARTE-MARQUE.md                Charte de marque, à transmettre à un imprimeur
 ├── _headers                        En-têtes de sécurité
