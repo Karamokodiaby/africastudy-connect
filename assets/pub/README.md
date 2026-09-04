@@ -6,7 +6,8 @@ Créations destinées à promouvoir AfricaStudy Connect sur un site tiers, Daloa
 
 | Fichier | Format | Poids | Usage |
 |---|---|---|---|
-| `bloc-daloa360.html` | responsive | 2 Ko | **Option recommandée.** À coller dans une page ou un article. |
+| `pub-daloa360-800x270.png` | 800 × 270 | 24 Ko | **Pour Daloa360.** Dessinée pour l'emplacement article, voir ci-dessous. |
+| `bloc-daloa360.html` | responsive | 2 Ko | Pour un site acceptant du HTML. Daloa360 n'accepte que des images. |
 | `pub-728x90.png` | bannière large | 12 Ko | Haut ou bas de page, écran d'ordinateur. |
 | `pub-300x250.png` | rectangle moyen | 15 Ko | Colonne latérale. Le format le plus universel. |
 | `pub-320x100.png` | bannière mobile | 8 Ko | Entre deux articles sur téléphone. |
@@ -20,6 +21,27 @@ Il est également accessible : le texte est du vrai texte, lisible par un lecteu
 N'utilisez les images que si l'emplacement publicitaire n'accepte que des images.
 
 ## Intégration dans Daloa360
+
+Daloa360 gère ses publicités dans Strapi, avec un content-type « Publicité » dont le champ image est obligatoire. **Le bloc HTML n'y est donc pas utilisable** : il faut passer par l'image.
+
+Dans Strapi, créer une entrée avec :
+
+| Champ | Valeur |
+|---|---|
+| Nom | AfricaStudy Connect, rentrée 2027 |
+| Annonceur | AfricaStudy Connect |
+| Emplacement | `article-top` ou `article-bottom` |
+| Catégories ciblées | `education,economie` |
+| Image | `pub-daloa360-800x270.png` |
+| Lien | `https://africastudyconnect.com/?utm_source=daloa360&utm_medium=display&utm_campaign=rentree-2027` |
+| Texte alternatif | AfricaStudy Connect, étude de profil gratuite pour étudier à l'étranger |
+| Fin de campagne | 31 octobre 2026 |
+
+Renseigner la date de fin est important : elle arrête la diffusion toute seule, sans intervention, le jour où la promotion annoncée sur la création expire.
+
+Le format 800 × 270 n'est pas arbitraire. L'emplacement article fait 728 px sur ordinateur et environ 343 px sur mobile, avec un plafond de hauteur de 320 px. Ce rapport donne 246 px sur ordinateur et 116 px sur mobile : sous le plafond dans les deux cas, donc jamais rogné, et assez grand pour rester lisible sur téléphone.
+
+## Intégration sur un autre site
 
 Le bloc est autonome : aucun fichier externe, aucune police à charger, aucun script. Tous les styles sont en ligne, ce qui garantit qu'aucune feuille de style de Daloa360 ne le déformera, et réciproquement.
 
