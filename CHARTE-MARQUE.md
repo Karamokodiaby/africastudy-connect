@@ -1,4 +1,4 @@
-# Charte de marque — AfricaStudy Connect
+# Charte de marque AfricaStudy Connect
 
 Document de référence. À transmettre tel quel à un imprimeur, un graphiste ou toute personne appelée à utiliser la marque.
 
@@ -10,19 +10,19 @@ Document de référence. À transmettre tel quel à un imprimeur, un graphiste o
 
 Une **trajectoire ascendante entre un point de départ et une destination**.
 
-La signature du cabinet dit : « Votre passerelle vers les meilleures universités ». La marque ne fait que dessiner cette phrase. Elle ne montre pas des études, elle montre un **passage accompagné** — ce que le cabinet vend réellement.
+La signature du cabinet dit : « Votre passerelle vers les meilleures universités ». La marque ne fait que dessiner cette phrase. Elle ne montre pas des études, elle montre un **passage accompagné**, ce que le cabinet vend réellement.
 
 ### Pourquoi chaque élément
 
 **Deux points, et non un.** Un point isole un lieu ; deux points reliés créent une relation. Le nom se termine par *Connect* : la marque montre la connexion.
 
-**Le point de départ est petit et bleu pâle.** C'est l'étudiant aujourd'hui — réel, mais pas encore arrivé.
+**Le point de départ est petit et bleu pâle.** C'est l'étudiant aujourd'hui, réel, mais pas encore arrivé.
 
 **La destination est plus grande et ambre.** Plus grande parce que c'est le but. Ambre parce que c'est la seule couleur chaude de la charte, celle qui signale déjà ce qui compte sur le site. L'œil y va seul : la destination est ce que la famille achète.
 
 **La courbe monte de gauche à droite.** Dans une lecture de gauche à droite, cela se lit comme une progression. Descendante ou plate, elle dirait le déclin ou l'immobilité.
 
-**C'est une courbe, pas une droite.** Le chemin n'est pas direct : il est accompagné, il s'infléchit. Une ligne droite dirait « c'est simple » — ce qui serait faux, et contraire au discours du cabinet, qui insiste sur les délais, le garant et les ressources à justifier.
+**C'est une courbe, pas une droite.** Le chemin n'est pas direct : il est accompagné, il s'infléchit. Une ligne droite dirait « c'est simple », ce qui serait faux, et contraire au discours du cabinet, qui insiste sur les délais, le garant et les ressources à justifier.
 
 **La courbe ne s'interrompt pas.** Du premier échange jusqu'à l'arrivée.
 
@@ -33,7 +33,7 @@ La signature du cabinet dit : « Votre passerelle vers les meilleures universit�
 | Piste | Raison du rejet |
 |---|---|
 | **Mortier de diplômé** | Identifie un secteur, pas une entreprise. Représente la fin du parcours alors que le cabinet vend le passage. Illisible en dessous de 24 px. |
-| **Carte de l'Afrique** | Réduit le cabinet à son point de départ, quand sa valeur est le pont vers l'Europe et le Canada. Pose la question des pays représentés — six sont accompagnés, pas cinquante-quatre. Cliché de toute marque « Afrique + X ». |
+| **Carte de l'Afrique** | Réduit le cabinet à son point de départ, quand sa valeur est le pont vers l'Europe et le Canada. Pose la question des pays représentés : six sont accompagnés, pas cinquante-quatre. Cliché de toute marque « Afrique + X ». |
 | **Globe ou avion** | Évoque une agence de voyage. La confusion nuit à un cabinet de conseil. |
 | **Monogramme A/C** | Sûr mais muet. Un monogramme porte un sens qu'il ne crée pas : il suppose une marque déjà connue. |
 
@@ -49,7 +49,7 @@ L'arc ascendant reste par ailleurs une forme employée ailleurs, notamment dans 
 
 | Fichier | Usage |
 |---|---|
-| `assets/logo.svg` | Verrouillage horizontal — marque et nom. Documents, signature d'e-mail, supports imprimés. |
+| `assets/logo.svg` | Verrouillage horizontal, marque et nom. Documents, signature d'e-mail, supports imprimés. |
 | `assets/logo-mark.svg` | Marque seule, à partir de 24 px. |
 | `assets/favicon.svg` | Onglet de navigateur. **Dessin distinct**, voir §5. |
 | `assets/apple-touch-icon.png` | Icône d'écran d'accueil iOS, 180 × 180 px. |
@@ -91,7 +91,7 @@ Le nom est composé en **Poppins Bold** (graisse 800), la police du site, dispon
 |---|---|---|
 | Verrouillage horizontal | 140 px de large | 35 mm de large |
 | Marque seule | 24 px | 8 mm |
-| Favicon | 16 px | — |
+| Favicon | 16 px | Sans objet |
 
 **En dessous de 24 px, utilisez `favicon.svg` et non `logo-mark.svg`.** Ce n'est pas la même image : le favicon a un trait nettement plus épais et son point de départ a été supprimé. À cette taille, le tracé fin se brouille et les deux points se confondent. Un logo qui ne fonctionne qu'en grand est un logo raté ; c'est pourquoi il existe deux dessins.
 
@@ -107,7 +107,7 @@ Réservez autour de la marque un espace vide égal à **la moitié de sa hauteur
 
 - **Ne pas recolorer** le carré ni les points. Les quatre couleurs portent chacune un sens.
 - **Ne pas déformer.** L'agrandissement se fait toujours en conservant les proportions.
-- **Ne pas ajouter d'effet** — ombre portée, contour, dégradé, biseau.
+- **Ne pas ajouter d'effet** : ombre portée, contour, dégradé, biseau.
 - **Ne pas faire pivoter** la marque. La courbe monte de gauche à droite ; inclinée, elle perd sa lecture.
 - **Ne pas recomposer le nom** dans une autre police. Utilisez `logo.svg`.
 - **Ne pas poser la marque sans son carré** sur une photographie. Le carré existe pour garantir le contraste.
@@ -117,7 +117,7 @@ Réservez autour de la marque un espace vide égal à **la moitié de sa hauteur
 
 ## 8. Usage en une seule couleur
 
-En monochrome — tampon, télécopie, gravure, broderie, impression noir et blanc — la courbe conserve son sens. Composez le carré dans la couleur unique disponible et réservez le tracé et les points en blanc, sans chercher à distinguer le point de départ de la destination.
+En monochrome (tampon, télécopie, gravure, broderie, impression noir et blanc), la courbe conserve son sens. Composez le carré dans la couleur unique disponible et réservez le tracé et les points en blanc, sans chercher à distinguer le point de départ de la destination.
 
 ---
 

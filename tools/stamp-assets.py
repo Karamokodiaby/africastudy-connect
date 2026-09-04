@@ -7,7 +7,7 @@ assets/app.js dans toutes les pages HTML.
 Pourquoi c'est nécessaire : `_headers` demande aux navigateurs de garder les
 fichiers de assets/ en cache pendant une semaine. Sans empreinte, un visiteur
 déjà venu sur le site continue de voir l'ancien CSS pendant sept jours après
-une mise en ligne — une promotion, un changement de tarif ou une correction
+une mise en ligne. Une promotion, un changement de tarif ou une correction
 d'affichage lui resteraient invisibles.
 
 L'empreinte est calculée sur le contenu du fichier : elle ne change que si le

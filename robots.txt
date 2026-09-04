@@ -1,4 +1,4 @@
-# robots.txt — AfricaStudy Connect
+# robots.txt, AfricaStudy Connect
 User-agent: *
 Allow: /
 Disallow: /api/

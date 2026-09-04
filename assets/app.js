@@ -1,5 +1,5 @@
 /* ============================================================
-   AfricaStudy Connect — interactions du site
+   AfricaStudy Connect, interactions du site
    ============================================================ */
 (function () {
     'use strict';
@@ -160,7 +160,7 @@
         selectedFiles.forEach(function (file, index) {
             var li = document.createElement('li');
             var label = document.createElement('span');
-            label.textContent = file.name + ' — ' + humanSize(file.size);
+            label.textContent = file.name + ' (' + humanSize(file.size) + ')';
             var remove = document.createElement('button');
             remove.type = 'button';
             remove.setAttribute('aria-label', 'Retirer ' + file.name);
@@ -251,8 +251,8 @@
                 break;
             case 'phone':
                 var digits = value.replace(/\D/g, '');
-                if (digits.length < 6) { setError('phone', 'Numéro trop court — indiquez votre numéro WhatsApp complet.'); return false; }
-                if (digits.length > 15) { setError('phone', 'Numéro trop long — vérifiez votre saisie.'); return false; }
+                if (digits.length < 6) { setError('phone', 'Numéro trop court, indiquez votre numéro WhatsApp complet.'); return false; }
+                if (digits.length > 15) { setError('phone', 'Numéro trop long, vérifiez votre saisie.'); return false; }
                 break;
             case 'originCountry':
                 if (!value) { setError('originCountry', 'Sélectionnez votre pays de résidence.'); return false; }
@@ -383,7 +383,7 @@
             var failed = results.filter(function (ok) { return !ok; }).length;
             if (!failed) return '';
             return failed === results.length
-                ? 'L\'envoi des documents a échoué — vous pourrez les transmettre par e-mail.'
+                ? 'L\'envoi des documents a échoué, vous pourrez les transmettre par e-mail.'
                 : failed + ' document(s) n\'ont pas pu être envoyés.';
         });
     }

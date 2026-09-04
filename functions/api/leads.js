@@ -28,7 +28,7 @@ function safeEqual(a, b) {
 
 function authorize(request, env) {
     if (!env.ADMIN_TOKEN) {
-        console.error('ADMIN_TOKEN non configuré — accès aux leads refusé.');
+        console.error('ADMIN_TOKEN non configuré, accès aux leads refusé.');
         return false;
     }
     const header = request.headers.get('Authorization') || '';

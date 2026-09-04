@@ -6,7 +6,7 @@ Bascule le site de africastudy-connect.pages.dev vers le domaine définitif.
 L'opération touche plus que l'adresse du site : les balises canoniques, le
 sitemap, les images de partage social, les données structurées, l'adresse
 e-mail affichée sur vingt-cinq pages et les variables du backend. Une bascule
-partielle est pire que pas de bascule du tout — d'où ce script, qui fait tout
+partielle est pire que pas de bascule du tout, d'où ce script, qui fait tout
 en une passe ou rien.
 
 Un garde-fou vérifie que le domaine résout avant d'écrire quoi que ce soit :
@@ -120,7 +120,7 @@ def main():
 
     print()
     if simulation:
-        print(f"  SIMULATION — {total} remplacements dans {len(touches)} fichiers.")
+        print(f"  SIMULATION, {total} remplacements dans {len(touches)} fichiers.")
         print("  Relancez sans --simulation pour écrire.")
     else:
         print(f"  {total} remplacements effectués dans {len(touches)} fichiers.")

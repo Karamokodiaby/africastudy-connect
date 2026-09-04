@@ -10,7 +10,7 @@ FROM_EMAIL = "AfricaStudy Connect <contact@africastudyconnect.com>"
 SITE_URL = "https://africastudyconnect.com"
 
 # ══════════════════════════════════════════════════════════════════════════
-#  BINDINGS — à décommenter APRÈS avoir créé les ressources
+#  BINDINGS, à décommenter APRÈS avoir créé les ressources
 # ══════════════════════════════════════════════════════════════════════════
 #
 #  Ces blocs sont volontairement commentés : un database_id absent ou

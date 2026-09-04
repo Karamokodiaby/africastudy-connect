@@ -19,7 +19,7 @@ export async function onRequestPost(context) {
     const { request, env } = context;
 
     if (!env.DB) {
-        console.error('Binding D1 "DB" absent — vérifier wrangler.toml et les bindings Pages.');
+        console.error('Binding D1 "DB" absent, vérifier wrangler.toml et les bindings Pages.');
         return fail('Service temporairement indisponible.', 503, 'db_unavailable');
     }
 
@@ -93,12 +93,12 @@ export async function onRequestPost(context) {
 
     // ── E-mails (hors chemin critique : un échec ne casse pas la réponse) ──
     const safe = Object.fromEntries(
-        Object.entries(lead).map(([k, v]) => [k, escapeHtml(v === null ? '—' : v)])
+        Object.entries(lead).map(([k, v]) => [k, escapeHtml(v === null ? 'Non renseigné' : v)])
     );
 
     const confirmation = sendEmail(env, {
         to: lead.email,
-        subject: 'Votre demande est bien enregistrée — AfricaStudy Connect',
+        subject: 'Votre demande est bien enregistrée chez AfricaStudy Connect',
         html: `
             <div style="font-family:Arial,Helvetica,sans-serif;color:#0f172a;line-height:1.6;">
               <h2 style="color:#1e293b;">Merci ${safe.name},</h2>
@@ -115,7 +115,7 @@ export async function onRequestPost(context) {
                 <a href="https://wa.me/33616483558" style="color:#2563eb;">Écrivez-nous sur WhatsApp</a>.</p>
               <hr style="border:none;border-top:1px solid #e2e8f0;margin:28px 0;">
               <p style="font-size:12px;color:#64748b;">
-                AfricaStudy Connect — SIRET 8236043270010<br>
+                AfricaStudy Connect, SIRET 8236043270010<br>
                 Vos données sont traitées conformément à notre
                 <a href="${env.SITE_URL || ''}/politique-confidentialite.html" style="color:#2563eb;">politique de confidentialité</a>.
               </p>
@@ -125,7 +125,7 @@ export async function onRequestPost(context) {
     const notification = sendEmail(env, {
         to: env.NOTIFY_EMAIL || 'contact@africastudy-connect.com',
         replyTo: lead.email,
-        subject: `Nouvelle demande — ${lead.name} (${lead.destination})`,
+        subject: `Nouvelle demande : ${lead.name} (${lead.destination})`,
         html: `
             <div style="font-family:Arial,Helvetica,sans-serif;color:#0f172a;line-height:1.6;">
               <h2>Nouvelle demande d'étude de profil</h2>

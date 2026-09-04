@@ -25,8 +25,8 @@ Sans cela, **le formulaire n'enregistre aucune demande**. Les sept étapes sont 
 
 Les mentions légales, la politique de confidentialité et les conditions générales de vente ont été rédigées avec soin et sont cohérentes entre elles, mais elles n'ont pas été validées par un juriste. Deux articles engagent directement la responsabilité du cabinet :
 
-- **Article 8 des CGV** — garantie en cas de refus de visa, avec un remboursement chiffré à 30 % après deux campagnes.
-- **Article 7 des CGV** — rétractation. Cet article ne produit son effet que si **le contrat signé par le client comporte la mention de demande d'exécution immédiate**. Sans elle, un client peut se rétracter avec remboursement intégral pendant quatorze jours.
+- **Article 8 des CGV**, garantie en cas de refus de visa, avec un remboursement chiffré à 30 % après deux campagnes.
+- **Article 7 des CGV**, rétractation. Cet article ne produit son effet que si **le contrat signé par le client comporte la mention de demande d'exécution immédiate**. Sans elle, un client peut se rétracter avec remboursement intégral pendant quatorze jours.
 
 ### Promotion en cours
 
@@ -40,19 +40,19 @@ Une offre spéciale court **jusqu'au 31 octobre 2026 inclus** :
 
 L'option Admission Post-Bac (343 € / 225 000 FCFA) n'est pas concernée.
 
-**À la fin de la promotion**, il faut retirer le bandeau et les prix barrés — un prix affiché comme réduit en permanence n'est plus une promotion mais le prix réel, et l'annoncer comme une remise est une pratique commerciale trompeuse. Les points à modifier : les cartes tarifaires et le bandeau dans `index.html`, les options du formulaire, le bloc `hasOfferCatalog` des données structurées, et le tableau de l'article 3 des CGV.
+**À la fin de la promotion**, il faut retirer le bandeau et les prix barrés, un prix affiché comme réduit en permanence n'est plus une promotion mais le prix réel, et l'annoncer comme une remise est une pratique commerciale trompeuse. Les points à modifier : les cartes tarifaires et le bandeau dans `index.html`, les options du formulaire, le bloc `hasOfferCatalog` des données structurées, et le tableau de l'article 3 des CGV.
 
 ### Améliorations facultatives
 
-- **Images des articles** — les sept fiches de villes ont leur emplacement prêt ; il ne reste qu'à déposer les fichiers dans `assets/img/`. Format, poids maximum et sources légales : voir [tools/README-images.md](tools/README-images.md). Tant qu'une image manque, son bloc disparaît automatiquement.
-- **Image de partage** — créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook des pages autres que les fiches de villes affichent un aperçu vide.
-- **Section « À propos »** — ajouter les photos de l'équipe et du bureau, et l'histoire du cabinet.
-- **Pages destinations** — y porter les données chiffrées vérifiées chaque année (frais de scolarité, budget de vie, ressources à justifier). C'est ce qui fait leur valeur en référencement.
-- **Nom de domaine** — le site pointe partout vers `africastudyconnect.com`. La bascule vers le domaine définitif se fait en une commande :
+- **Images des articles**, les sept fiches de villes ont leur emplacement prêt ; il ne reste qu'à déposer les fichiers dans `assets/img/`. Format, poids maximum et sources légales : voir [tools/README-images.md](tools/README-images.md). Tant qu'une image manque, son bloc disparaît automatiquement.
+- **Image de partage**, créer `assets/og-image.png` en 1200 × 630 px. Sans elle, les partages WhatsApp et Facebook des pages autres que les fiches de villes affichent un aperçu vide.
+- **Section « À propos »**, ajouter les photos de l'équipe et du bureau, et l'histoire du cabinet.
+- **Pages destinations**, y porter les données chiffrées vérifiées chaque année (frais de scolarité, budget de vie, ressources à justifier). C'est ce qui fait leur valeur en référencement.
+- **Nom de domaine**, le site pointe partout vers `africastudyconnect.com`. La bascule vers le domaine définitif se fait en une commande :
   ```bash
   python3 tools/basculer-domaine.py africastudyconnect.com
   ```
-  Le script traite les 335 occurrences réparties dans 29 fichiers — balises canoniques, sitemap, données structurées, images de partage, adresse e-mail et variables du backend. Il refuse d'écrire tant que le domaine ne résout pas, car pointer les canoniques vers une adresse injoignable empêcherait Google d'indexer le site. Ajoutez `--simulation` pour voir ce qui changerait sans rien écrire.
+  Le script traite les 335 occurrences réparties dans 29 fichiers, balises canoniques, sitemap, données structurées, images de partage, adresse e-mail et variables du backend. Il refuse d'écrire tant que le domaine ne résout pas, car pointer les canoniques vers une adresse injoignable empêcherait Google d'indexer le site. Ajoutez `--simulation` pour voir ce qui changerait sans rien écrire.
 
 Les rappels restants dans les pages se retrouvent avec :
 
@@ -84,14 +84,15 @@ grep -rn "todo-flag" --include="*.html" .
 │   └── img/                        Photographies des articles
 ├── functions/api/                  Backend serverless (Pages Functions)
 │   ├── _shared.js                  Réponses JSON, validation, envoi d'e-mail
-│   ├── submit.js                   POST — enregistre une demande
-│   ├── upload.js                   POST — dépôt de document dans R2
-│   └── leads.js                    GET/PATCH — consultation (protégé)
+│   ├── submit.js                   POST, enregistre une demande
+│   ├── upload.js                   POST, dépôt de document dans R2
+│   └── leads.js                    GET/PATCH, consultation (protégé)
 ├── migrations/                     Schéma D1
 ├── tools/
 │   ├── sync-faq-jsonld.py          Régénère le JSON-LD depuis la FAQ visible
 │   ├── stamp-assets.py             Versionne les liens CSS/JS (cache navigateur)
 │   ├── README-images.md            Format, poids, sources légales des images
+│   ├── verifier-tirets.py          Contrôle : aucun tiret cadratin dans le dépôt
 │   └── basculer-domaine.py         Migration vers le domaine définitif
 ├── CHARTE-MARQUE.md                Charte de marque, à transmettre à un imprimeur
 ├── _headers                        En-têtes de sécurité
@@ -99,7 +100,7 @@ grep -rn "todo-flag" --include="*.html" .
 └── wrangler.toml
 ```
 
-Le CSS et le JS sont partagés par toutes les pages : une modification de `assets/styles.css` s'applique partout. En revanche l'en-tête et le pied de page sont dupliqués dans chaque fichier HTML — c'est le prix d'un site statique sans build. Si vous modifiez le menu, répercutez-le sur toutes les pages.
+Le CSS et le JS sont partagés par toutes les pages : une modification de `assets/styles.css` s'applique partout. En revanche l'en-tête et le pied de page sont dupliqués dans chaque fichier HTML, c'est le prix d'un site statique sans build. Si vous modifiez le menu, répercutez-le sur toutes les pages.
 
 ### Après toute modification de assets/
 
@@ -110,6 +111,16 @@ python3 tools/stamp-assets.py
 Les fichiers de `assets/` sont mis en cache une semaine par les navigateurs, comme le demande `_headers`. Sans cette commande, **un visiteur déjà venu sur le site continuerait de voir l'ancien CSS pendant sept jours** : une promotion, un changement de tarif ou une correction d'affichage lui resteraient invisibles.
 
 Le script calcule une empreinte du contenu et l'ajoute aux liens (`styles.css?v=88b035ed`). L'empreinte ne change que si le fichier change, ce qui préserve le bénéfice du cache. À lancer avant chaque déploiement qui touche au CSS ou au JavaScript.
+
+### Avant toute mise en ligne
+
+```bash
+python3 tools/verifier-tirets.py
+```
+
+Le cabinet n'emploie pas le tiret cadratin. Le caractère revient pourtant facilement : copier-coller depuis un document, correction automatique d'un traitement de texte, contenu généré. Ce contrôle balaie tout le dépôt et signale chaque occurrence avec sa ligne.
+
+Le remplacement dépend du rôle que jouait le tiret : deux-points pour une étiquette suivie de sa définition, parenthèses pour une incise, virgule devant « et » ou « mais », barre verticale dans un titre de page. Un remplacement uniforme produit du français bancal.
 
 ### Après toute modification de la FAQ
 
@@ -123,7 +134,7 @@ Régénère les données structurées à partir de la FAQ visible. Google n'acco
 
 ## Identité visuelle
 
-La marque figure une trajectoire ascendante entre un point de départ et une destination — la « passerelle » de la signature du cabinet. Elle remplace le mortier de diplômé générique utilisé auparavant.
+La marque figure une trajectoire ascendante entre un point de départ et une destination, la « passerelle » de la signature du cabinet. Elle remplace le mortier de diplômé générique utilisé auparavant.
 
 | Fichier | Usage |
 |---|---|
@@ -132,7 +143,7 @@ La marque figure une trajectoire ascendante entre un point de départ et une des
 | `assets/favicon.svg` | Variante au trait épaissi et sans point de départ : à 16 px, le tracé fin devient illisible. |
 | `assets/apple-touch-icon.png` | Icône d'écran d'accueil iOS, 180 × 180. |
 
-Couleurs : fond `#1e293b`, tracé blanc, point de départ `#60a5fa`, destination `#f59e0b`. La marque est intégrée en SVG directement dans l'en-tête des pages — aucune requête réseau, aucun risque d'image manquante.
+Couleurs : fond `#1e293b`, tracé blanc, point de départ `#60a5fa`, destination `#f59e0b`. La marque est intégrée en SVG directement dans l'en-tête des pages, aucune requête réseau, aucun risque d'image manquante.
 
 Le raisonnement complet, les tailles minimales, l'espace de respiration et les usages interdits sont réunis dans [CHARTE-MARQUE.md](CHARTE-MARQUE.md), rédigé pour être transmis tel quel à un imprimeur ou à un graphiste.
 
@@ -174,7 +185,7 @@ Créez un compte sur [resend.com](https://resend.com), vérifiez votre domaine d
 npx wrangler pages secret put RESEND_API_KEY
 ```
 
-Sans cette clé, les demandes sont bien enregistrées mais aucun e-mail n'est envoyé — ni au candidat, ni au cabinet.
+Sans cette clé, les demandes sont bien enregistrées mais aucun e-mail n'est envoyé, ni au candidat, ni au cabinet.
 
 ### 6. Protéger la consultation des demandes
 
@@ -182,7 +193,7 @@ Sans cette clé, les demandes sont bien enregistrées mais aucun e-mail n'est en
 npx wrangler pages secret put ADMIN_TOKEN
 ```
 
-Utilisez un jeton long et aléatoire, par exemple `openssl rand -hex 32`. Tant qu'il n'est pas défini, `/api/leads` refuse tout accès — c'est volontaire : cet endpoint expose des données personnelles.
+Utilisez un jeton long et aléatoire, par exemple `openssl rand -hex 32`. Tant qu'il n'est pas défini, `/api/leads` refuse tout accès, c'est volontaire : cet endpoint expose des données personnelles.
 
 ### 7. Lier les ressources dans le tableau de bord
 
@@ -205,7 +216,7 @@ npm run dev
 
 Le site est servi sur `http://localhost:8788`, avec une base D1 et un bucket R2 locaux.
 
-**Utilisez cette commande, pas un serveur statique quelconque.** Cloudflare Pages sert les pages sans l'extension `.html` — `/mentions-legales` et non `/mentions-legales.html` — et redirige la seconde forme vers la première. Les liens internes du site sont écrits sans extension, en conséquence. Un `python -m http.server` ne reproduit pas cette réécriture et renverrait des erreurs 404 sur toute la navigation interne&nbsp;; `wrangler pages dev` la reproduit fidèlement. Pour les secrets en local, copiez `.dev.vars.example` en `.dev.vars` et renseignez vos valeurs — ce fichier est ignoré par git.
+**Utilisez cette commande, pas un serveur statique quelconque.** Cloudflare Pages sert les pages sans l'extension `.html`, `/mentions-legales` et non `/mentions-legales.html`, et redirige la seconde forme vers la première. Les liens internes du site sont écrits sans extension, en conséquence. Un `python -m http.server` ne reproduit pas cette réécriture et renverrait des erreurs 404 sur toute la navigation interne&nbsp;; `wrangler pages dev` la reproduit fidèlement. Pour les secrets en local, copiez `.dev.vars.example` en `.dev.vars` et renseignez vos valeurs, ce fichier est ignoré par git.
 
 Première utilisation, créez le schéma local :
 
@@ -243,7 +254,7 @@ curl -X PATCH -H "Authorization: Bearer $ADMIN_TOKEN" \
 
 ## Mesure d'audience
 
-Le site est prêt pour [Plausible](https://plausible.io) — sans cookie, sans données personnelles, donc **sans bandeau de consentement à afficher**. Créez le site sur Plausible, puis décommentez la ligne `<script defer data-domain=…>` présente dans le `<head>` de chaque page.
+Le site est prêt pour [Plausible](https://plausible.io), sans cookie, sans données personnelles, donc **sans bandeau de consentement à afficher**. Créez le site sur Plausible, puis décommentez la ligne `<script defer data-domain=…>` présente dans le `<head>` de chaque page.
 
 Le formulaire déclenche déjà un événement `Lead` en cas de succès : il suffit de créer l'objectif correspondant dans Plausible pour suivre le taux de conversion.
 

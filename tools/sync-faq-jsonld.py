@@ -73,7 +73,7 @@ def main():
     bloc = "\n".join("    " + ligne for ligne in bloc.splitlines())
 
     nouveau = (
-        '    <!-- Données structurées : FAQ — généré par tools/sync-faq-jsonld.py,\n'
+        '    <!-- Données structurées : FAQ, généré par tools/sync-faq-jsonld.py,\n'
         '         ne pas éditer à la main, relancer le script après modification de la FAQ -->\n'
         '    <script type="application/ld+json">\n'
         + bloc

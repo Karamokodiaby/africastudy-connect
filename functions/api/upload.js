@@ -16,7 +16,7 @@ export async function onRequestPost(context) {
     const { request, env } = context;
 
     if (!env.R2) {
-        console.error('Binding R2 absent — vérifier wrangler.toml et les bindings Pages.');
+        console.error('Binding R2 absent, vérifier wrangler.toml et les bindings Pages.');
         return fail('Service de dépôt indisponible.', 503, 'r2_unavailable');
     }
 
