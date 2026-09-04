@@ -88,6 +88,7 @@ grep -rn "todo-flag" --include="*.html" .
 │   ├── stamp-assets.py             Versionne les liens CSS/JS (cache navigateur)
 │   ├── README-images.md            Format, poids, sources légales des images
 │   └── basculer-domaine.py         Migration vers le domaine définitif
+├── CHARTE-MARQUE.md                Charte de marque, à transmettre à un imprimeur
 ├── _headers                        En-têtes de sécurité
 ├── robots.txt / sitemap.xml
 └── wrangler.toml
@@ -127,6 +128,8 @@ La marque figure une trajectoire ascendante entre un point de départ et une des
 | `assets/apple-touch-icon.png` | Icône d'écran d'accueil iOS, 180 × 180. |
 
 Couleurs : fond `#1e293b`, tracé blanc, point de départ `#60a5fa`, destination `#f59e0b`. La marque est intégrée en SVG directement dans l'en-tête des pages — aucune requête réseau, aucun risque d'image manquante.
+
+Le raisonnement complet, les tailles minimales, l'espace de respiration et les usages interdits sont réunis dans [CHARTE-MARQUE.md](CHARTE-MARQUE.md), rédigé pour être transmis tel quel à un imprimeur ou à un graphiste.
 
 ## Mise en place du backend
 
