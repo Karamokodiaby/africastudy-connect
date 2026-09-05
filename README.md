@@ -201,6 +201,18 @@ npx wrangler pages secret put ADMIN_TOKEN
 
 Utilisez un jeton long et aléatoire, par exemple `openssl rand -hex 32`. Tant qu'il n'est pas défini, `/api/leads` refuse tout accès, c'est volontaire : cet endpoint expose des données personnelles.
 
+### Un piège à connaître sur les secrets
+
+**Un secret n'est visible que par les déploiements créés après son enregistrement.** Poser une clé sur un projet déjà déployé ne suffit pas : le déploiement en cours continue de tourner sans elle, silencieusement.
+
+Le symptôme est trompeur. `wrangler pages secret list` affiche bien la clé, mais le formulaire n'envoie aucun e-mail et `/api/leads` répond 401 avec le bon jeton. Rien n'indique la cause.
+
+Après chaque `secret put`, déclenchez donc un nouveau déploiement, par un `git push` ou par « Retry deployment » dans le tableau de bord. Pour vérifier ce que voit réellement le code en production :
+
+```bash
+npx wrangler pages deployment tail <ID_DU_DEPLOIEMENT> --project-name africastudy-connect --format pretty
+```
+
 ### 7. Lier les ressources dans le tableau de bord
 
 Dans **Cloudflare Pages → votre projet → Settings → Functions**, ajoutez les bindings :
