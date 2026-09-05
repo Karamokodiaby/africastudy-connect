@@ -47,7 +47,9 @@ C'est un site commercial. Une image récupérée sur un moteur de recherche est 
 
 ## Le crédit photo
 
-Chaque légende contient aujourd'hui la mention `Crédit photo à renseigner`. Remplacez-la par le crédit réel, ou supprimez la ligne `<span class="credit">…</span>` si la source n'en exige pas.
+Les légendes ne contiennent aucune mention de crédit par défaut : le site étant en ligne, une note du type « crédit à renseigner » serait lue par les visiteurs.
+
+Si la licence de votre image en exige un, ajoutez-le à la main dans la légende concernée, juste avant `</figcaption>`.
 
 Exemple :
 

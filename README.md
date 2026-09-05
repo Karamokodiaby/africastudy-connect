@@ -28,6 +28,21 @@ Les mentions légales, la politique de confidentialité et les conditions géné
 - **Article 8 des CGV**, garantie en cas de refus de visa, avec un remboursement chiffré à 30 % après deux campagnes.
 - **Article 7 des CGV**, rétractation. Cet article ne produit son effet que si **le contrat signé par le client comporte la mention de demande d'exécution immédiate**. Sans elle, un client peut se rétracter avec remboursement intégral pendant quatorze jours.
 
+### Ce qui reste à enrichir sur le site
+
+Ces points figuraient autrefois en encadrés oranges sur les pages elles-mêmes. Ils en ont été retirés : le site étant en ligne, ces notes internes étaient lues par les visiteurs et donnaient l'image d'un site inachevé. Ils sont consignés ici.
+
+**Conditions générales de vente, relecture juridique.** Le document est cohérent et défendable, mais il n'a pas été validé par un juriste. Deux articles engagent directement la responsabilité du cabinet :
+
+- **Article 8**, garantie en cas de refus de visa, avec un remboursement chiffré à 30 % après deux campagnes infructueuses.
+- **Article 7**, rétractation. Son existence et sa portée dépendent du pays d'établissement et de la qualité du client. Surtout, **il ne produit son effet que si le contrat signé par le client comporte la mention de demande d'exécution immédiate**. Sans elle, un client peut se rétracter avec remboursement intégral pendant quatorze jours.
+
+**Pages destinations, données chiffrées.** Les quatre pages décrivent le paysage sans avancer de montants. Y porter les chiffres que vous vérifiez chaque année leur donnerait leur pleine valeur en référencement : fourchette de frais de scolarité, budget de vie mensuel, montant de ressources à justifier, établissements partenaires. N'y inscrivez que ce que vous pouvez sourcer, et datez la mise à jour.
+
+**Section « À propos », photographies.** L'emplacement réservé aux photos de l'équipe et du bureau a été retiré de la page. Quand vous aurez ces images, elles renforceront la confiance des familles plus que n'importe quel argument écrit.
+
+**Crédits photographiques.** La mention automatique a été supprimée des légendes. Si une image que vous déposez exige un crédit, ajoutez-le à la main dans la légende concernée : voir [tools/README-images.md](tools/README-images.md).
+
 ### Promotion en cours
 
 Une offre spéciale court **jusqu'au 31 octobre 2026 inclus** :
