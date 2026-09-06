@@ -6,11 +6,61 @@ Créations destinées à promouvoir AfricaStudy Connect sur un site tiers, Daloa
 
 | Fichier | Format | Poids | Usage |
 |---|---|---|---|
+| `etudier-en-france-depuis-la-cote-divoire-africastudy-connect.png` | 1080 × 1080 | 82 Ko | **Facebook.** Publication carrée pour le fil. |
 | `pub-daloa360-800x270.png` | 800 × 270 | 24 Ko | **Pour Daloa360.** Dessinée pour l'emplacement article, voir ci-dessous. |
 | `bloc-daloa360.html` | responsive | 2 Ko | Pour un site acceptant du HTML. Daloa360 n'accepte que des images. |
 | `pub-728x90.png` | bannière large | 12 Ko | Haut ou bas de page, écran d'ordinateur. |
 | `pub-300x250.png` | rectangle moyen | 15 Ko | Colonne latérale. Le format le plus universel. |
 | `pub-320x100.png` | bannière mobile | 8 Ko | Entre deux articles sur téléphone. |
+
+## Campagne Facebook
+
+### Le fichier
+
+`etudier-en-france-depuis-la-cote-divoire-africastudy-connect.png`, 1080 × 1080 px.
+
+Le format carré est celui qui occupe le plus de hauteur dans le fil sur mobile, donc le plus visible. C'est aussi celui que Facebook recadre le moins.
+
+### Le nom de fichier
+
+Il n'est pas décoratif. Facebook ne l'exploite pas, mais l'image est hébergée sur le site et se retrouve dans Google Images, où le nom de fichier compte parmi les signaux de pertinence.
+
+Il reprend donc **la phrase que les gens tapent réellement** : « étudier en France depuis la Côte d'Ivoire ». Tout en minuscules, sans accent ni apostrophe, mots séparés par des traits d'union, marque à la fin. Un fichier nommé `affiche1.png` ou `IMG_2043.png` ne dit rien à personne.
+
+Gardez cette règle pour les visuels suivants : la requête d'abord, la marque ensuite.
+
+### Le texte de publication
+
+L'image seule ne suffit pas : sur Facebook, c'est le texte qui déclenche le commentaire et le partage. Une proposition à adapter :
+
+> Vous voulez étudier en France, au Canada ou en Europe, et vous ne savez pas par où commencer ?
+>
+> Nous étudions votre dossier gratuitement et nous vous disons franchement si votre projet est réaliste : les formations accessibles avec votre niveau, le budget complet à prévoir, et le calendrier à respecter.
+>
+> Plus de 10 ans d'accompagnement d'étudiants ivoiriens, maliens, burkinabè, guinéens, béninois et togolais.
+>
+> Accompagnement dès 400 000 FCFA au lieu de 492 000, jusqu'au 31 octobre.
+>
+> Étude de profil gratuite : africastudyconnect.com
+> Ou écrivez-nous sur WhatsApp au +33 6 16 48 35 58
+
+Trois choses à ne pas retirer de ce texte : la **question d'ouverture**, qui fait s'arrêter le lecteur ; le mot **gratuite**, qui lève l'objection immédiate ; et l'**échéance**, qui donne une raison d'agir aujourd'hui plutôt que d'y repenser.
+
+### Densité de texte
+
+L'affiche comporte six blocs de texte. Pour une **publication ordinaire**, aucune limite ne s'applique.
+
+Si vous **sponsorisez** la publication, sachez que Meta réduit la diffusion des visuels chargés en texte. Dans ce cas, demandez une variante allégée : accroche, prix, appel à l'action, rien d'autre.
+
+### À la fin de la promotion
+
+L'affiche annonce « dès 400 000 FCFA » et « jusqu'au 31 octobre ». **Retirez la publication au 31 octobre**, ou faites régénérer l'image avec les tarifs en vigueur :
+
+```bash
+python3 tools/generer-affiche-facebook.py
+```
+
+Une promotion affichée après son terme est une pratique commerciale trompeuse, au même titre que les prix barrés du site.
 
 ## Pourquoi préférer le bloc HTML
 
