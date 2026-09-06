@@ -13,6 +13,35 @@ Créations destinées à promouvoir AfricaStudy Connect sur un site tiers, Daloa
 | `pub-300x250.png` | rectangle moyen | 15 Ko | Colonne latérale. Le format le plus universel. |
 | `pub-320x100.png` | bannière mobile | 8 Ko | Entre deux articles sur téléphone. |
 
+## Liens tracés par canal
+
+Chaque canal doit avoir son propre lien. Sans cela, tous les visiteurs se confondent dans les statistiques et il devient impossible de dire quel média a fonctionné.
+
+Le seul élément à changer d'un lien à l'autre est `utm_source`. Gardez `utm_campaign` identique sur toute la campagne pour pouvoir en lire le total.
+
+| Canal | Lien à diffuser |
+|---|---|
+| Publicité sur Daloa360 | `https://africastudyconnect.com/?utm_source=daloa360&utm_medium=display&utm_campaign=rentree-2027` |
+| Publication Facebook | `https://africastudyconnect.com/?utm_source=facebook&utm_medium=social&utm_campaign=rentree-2027` |
+| Article dans un média | `https://africastudyconnect.com/blog/frais-inscription-universite-publique-france-2026-2027?utm_source=NOM_DU_MEDIA&utm_medium=article&utm_campaign=rentree-2027` |
+| Statut WhatsApp | `https://africastudyconnect.com/?utm_source=whatsapp&utm_medium=statut&utm_campaign=rentree-2027` |
+
+Remplacez `NOM_DU_MEDIA` par un identifiant court et sans espace, le même à chaque parution de ce média.
+
+### Pourquoi l'article plutôt que l'accueil
+
+Le lien destiné à un média pointe volontairement vers l'article sur les frais d'inscription, et non vers la page d'accueil.
+
+Quelqu'un qui découvre le cabinet dans un journal n'est pas prêt à remplir un formulaire pour une prestation à plusieurs centaines de milliers de francs. Il est prêt à lire. L'article répond à une question qu'il se pose vraiment, démontre le sérieux du cabinet, et se termine par un appel à l'action. Le taux de conversion y est structurellement meilleur qu'en envoyant un inconnu droit sur une grille tarifaire.
+
+### Sans mesure d'audience, ces liens ne servent à rien
+
+Les paramètres `utm_` ne sont lisibles que par un outil de mesure. Tant que Plausible n'est pas activé, ils ne produisent aucune donnée.
+
+Pour l'activer : créez le site sur [plausible.io](https://plausible.io), puis décommentez dans le `<head>` des pages la ligne `<script defer data-domain=…>`. Le formulaire déclenche déjà un événement `Lead` : créez l'objectif correspondant dans Plausible, et vous saurez non seulement combien de visiteurs chaque média envoie, mais combien d'entre eux déposent une demande.
+
+C'est la seule façon de savoir si une campagne mérite d'être reconduite.
+
 ## Campagne Facebook
 
 ### Le fichier
