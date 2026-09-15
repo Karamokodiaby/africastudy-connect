@@ -51,7 +51,7 @@ Une offre spéciale court **jusqu'au 31 octobre 2026 inclus** :
 |---|---|---|---|
 | Essentiel | 750 € / 492 000 FCFA | 610 € / 400 000 FCFA | −18,7 % |
 | Confort & Visa | 1 800 € / 1 181 000 FCFA | 1 524 € / 1 000 000 FCFA | −15,3 % |
-| VIP Sérénité | 3 500 € / 2 296 000 FCFA | 2 973 € / 1 950 000 FCFA | −15,1 % |
+| VIP Sérénité | 3 500 € / 2 296 000 FCFA | 3 049 € / 2 000 000 FCFA | −12,9 % |
 
 L'option Admission Post-Bac (343 € / 225 000 FCFA) n'est pas concernée.
 
