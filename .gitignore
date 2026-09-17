@@ -4,3 +4,12 @@ node_modules/
 .env
 .DS_Store
 .claude/
+
+# Documents internes : Cloudflare Pages publie la racine du projet
+# (pages_build_output_dir = "."), donc tout fichier commité devient
+# téléchargeable sur africastudyconnect.com. Le catalogue des masters vit
+# dans ~/AfricaStudy-Prive/, hors du dépôt. Ces règles sont un filet de
+# sécurité au cas où une copie atterrirait ici par mégarde.
+prive/
+*.xlsx
+*.xls
