@@ -1,0 +1,70 @@
+{
+  "slug": "master-miage",
+  "titre": "Master MIAGE",
+  "tagline": "S'informer, puis décider.",
+  "slides": [
+    {
+      "type": "couverture",
+      "fichier": "couverture",
+      "titre": ["La filière", "MIAGE"],
+      "surligne": [1],
+      "accroche": "Informatique et gestion. Elle recrute très bien. Mais elle a une condition d'entrée cachée."
+    },
+    {
+      "type": "texte",
+      "fichier": "de-quoi-s-agit-il",
+      "titre": "De quoi s'agit-il ?",
+      "paragraphes": [
+        "**Méthodes informatiques appliquées à la gestion des entreprises.** Une licence, puis un master, dans **21 universités** en France.",
+        "Programmation, bases de données, cybersécurité, intelligence artificielle, gestion de projet et gestion d'entreprise.",
+        "Le diplômé n'est ni un développeur pur ni un gestionnaire pur. Il fait le lien entre les deux, et c'est ce profil que les entreprises peinent à recruter."
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "quels-metiers",
+      "titre": "Quels métiers ?",
+      "chapeau": "Les fonctions visées par le réseau MIAGE :",
+      "items": [
+        { "icone": "donnees", "titre": "Business analyst et data analyst" },
+        { "icone": "ecran", "titre": "Chef de projet informatique" },
+        { "icone": "document", "titre": "Consultant et consultant ERP" },
+        { "icone": "loupe", "titre": "Architecte de système d'information" },
+        { "icone": "alerte", "titre": "Responsable sécurité des SI" }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "les-taux-d-emploi",
+      "titre": "Et l'emploi ?",
+      "chapeau": "Les chiffres publiés par les universités elles-mêmes :",
+      "items": [
+        { "icone": "temple", "titre": "Nantes Université", "detail": "Insertion très proche de 100 % dans les six mois" },
+        { "icone": "temple", "titre": "Université d'Orléans", "detail": "98 % d'emploi après un mois" },
+        { "icone": "temple", "titre": "Université Côte d'Azur", "detail": "86 % des diplômés 2022 en emploi à six mois" },
+        { "icone": "alerte", "titre": "À lire avec prudence", "detail": "Ce sont les établissements qui les publient. Le seul chiffre daté est aussi le plus bas.", "cle": true }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "ou-se-former",
+      "titre": "Où se former ?",
+      "chapeau": "**1 055 places** en première année de master, réparties dans **19 universités**.",
+      "items": [
+        { "icone": "temple", "titre": "Sans contrat d'entreprise", "detail": "Toulouse Capitole, Toulouse, Bordeaux, Lorraine, Paris 1, Haute-Alsace, Lyon 1" },
+        { "icone": "temple", "titre": "Les deux formules", "detail": "PSL, Paris-Saclay, Paris Cité, Nanterre, Côte d'Azur, Rennes, Orléans, Grenoble, Lille, Picardie" },
+        { "icone": "alerte", "titre": "Alternance uniquement", "detail": "Aix-Marseille et Nantes. Sans entreprise, pas d'inscription.", "cle": true }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "fichier": "le-piege-de-l-alternance",
+      "titre": "Le piège",
+      "chiffre": "1 place sur 2",
+      "legende": "En master MIAGE, **493 places sur 1 055** sont en alternance. Sans contrat signé avec une entreprise, **il n'y a pas d'inscription**.",
+      "source": "Capacités d'accueil publiées sur Mon Master, relevées le 17 septembre 2026.",
+      "conclusion": "La loi vous autorise à signer. Le problème est de **trouver l'entreprise depuis Abidjan ou Dakar**. Notre méthode : viser l'initial en M1, l'alternance en M2.",
+      "bouton": "Étude de profil gratuite"
+    }
+  ]
+}

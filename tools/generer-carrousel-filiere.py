@@ -412,7 +412,7 @@ def slide_chiffre(cfg, s, index, total):
         fs  = police(int(24 * echelle), "texte")
         h_leg = hauteur_riche(d, s["legende"], UTIL, fl, flg)
         h_con = hauteur_riche(d, s["conclusion"], UTIL, fc, fcg)
-        fixe = h_leg + 14 + int(fs.size * 1.4) + 44 + 8 + 26 + h_con
+        fixe = 16 + h_leg + 14 + int(fs.size * 1.4) + 44 + 8 + 26 + h_con
         f = ajuste(d, s["chiffre"], UTIL, 186, "extra", 74)
         while f.size > 74 and int(f.size * 1.24) + fixe > dispo:
             f = police(f.size - 4, "extra")
@@ -421,7 +421,7 @@ def slide_chiffre(cfg, s, index, total):
 
     y = haut + 4
     d.text((M, y), s["chiffre"], font=f, fill=AMBRE)
-    y += int(f.size * 1.24)
+    y += int(f.size * 1.24) + 16
 
     y = riche(d, M, y, s["legende"], fl, UTIL, BLANC, BLEU_CLAIR, flg) + 14
     d.text((M, y), s["source"], font=fs, fill=GRIS_FONCE)

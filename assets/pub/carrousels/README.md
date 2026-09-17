@@ -40,6 +40,7 @@ Ni taux de réussite visa, ni promesse d'admission, ni nom d'établissement part
 | Filière | Dossier | Article lié |
 |---|---|---|
 | Master Humanités numériques | `master-humanites-numeriques/` | `/blog/master-humanites-numeriques-etudiants-afrique-ouest` |
+| Master MIAGE | `master-miage/` | `/blog/miage-etudiants-afrique-ouest` |
 
 ## Publier
 
