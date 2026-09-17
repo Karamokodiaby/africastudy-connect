@@ -35,6 +35,16 @@ Pictogrammes disponibles : `check`, `loupe`, `temple`, `ecran`, `donnees`, `mega
 
 Ni taux de réussite visa, ni promesse d'admission, ni nom d'établissement partenaire. Une allégation publicitaire doit pouvoir être prouvée, et elle contredirait nos propres conditions générales.
 
+**Ni la liste nominative des universités.** Ni sur les visuels, ni dans les articles. On publie une carte de France avec un point par ville, les compteurs par région, et un appel à nous contacter. La liste brute est publique et gratuite sur monmaster.gouv.fr : ce que nous vendons n'est pas la liste, c'est de savoir lequel de ces parcours correspond à un profil donné. Écrire « sept universités recrutent sans condition de contrat » vaut mieux que de les nommer.
+
+Seule exception : une université citée comme **source d'une statistique** peut être nommée, parce qu'un chiffre sans attribution ne vaut rien.
+
+Les cartes se produisent avec :
+
+```bash
+python3 tools/generer-carte-france.py contenus/cartes/NOM.json
+```
+
 ## Carrousels produits
 
 | Filière | Dossier | Article lié |

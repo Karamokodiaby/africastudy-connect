@@ -6,8 +6,13 @@
     {
       "type": "couverture",
       "fichier": "couverture",
-      "titre": ["La filière", "MIAGE"],
-      "surligne": [1],
+      "titre": [
+        "La filière",
+        "MIAGE"
+      ],
+      "surligne": [
+        1
+      ],
       "accroche": "Informatique et gestion. Elle recrute très bien. Mais elle a une condition d'entrée cachée."
     },
     {
@@ -26,11 +31,26 @@
       "titre": "Quels métiers ?",
       "chapeau": "Les fonctions visées par le réseau MIAGE :",
       "items": [
-        { "icone": "donnees", "titre": "Business analyst et data analyst" },
-        { "icone": "ecran", "titre": "Chef de projet informatique" },
-        { "icone": "document", "titre": "Consultant et consultant ERP" },
-        { "icone": "loupe", "titre": "Architecte de système d'information" },
-        { "icone": "alerte", "titre": "Responsable sécurité des SI" }
+        {
+          "icone": "donnees",
+          "titre": "Business analyst et data analyst"
+        },
+        {
+          "icone": "ecran",
+          "titre": "Chef de projet informatique"
+        },
+        {
+          "icone": "document",
+          "titre": "Consultant et consultant ERP"
+        },
+        {
+          "icone": "loupe",
+          "titre": "Architecte de système d'information"
+        },
+        {
+          "icone": "alerte",
+          "titre": "Responsable sécurité des SI"
+        }
       ]
     },
     {
@@ -39,21 +59,56 @@
       "titre": "Et l'emploi ?",
       "chapeau": "Les chiffres publiés par les universités elles-mêmes :",
       "items": [
-        { "icone": "temple", "titre": "Nantes Université", "detail": "Insertion très proche de 100 % dans les six mois" },
-        { "icone": "temple", "titre": "Université d'Orléans", "detail": "98 % d'emploi après un mois" },
-        { "icone": "temple", "titre": "Université Côte d'Azur", "detail": "86 % des diplômés 2022 en emploi à six mois" },
-        { "icone": "alerte", "titre": "À lire avec prudence", "detail": "Ce sont les établissements qui les publient. Le seul chiffre daté est aussi le plus bas.", "cle": true }
+        {
+          "icone": "temple",
+          "titre": "Nantes Université",
+          "detail": "Insertion très proche de 100 % dans les six mois"
+        },
+        {
+          "icone": "temple",
+          "titre": "Université d'Orléans",
+          "detail": "98 % d'emploi après un mois"
+        },
+        {
+          "icone": "temple",
+          "titre": "Université Côte d'Azur",
+          "detail": "86 % des diplômés 2022 en emploi à six mois"
+        },
+        {
+          "icone": "alerte",
+          "titre": "À lire avec prudence",
+          "detail": "Ce sont les établissements qui les publient. Le seul chiffre daté est aussi le plus bas.",
+          "cle": true
+        }
       ]
     },
     {
       "type": "liste",
       "fichier": "ou-se-former",
       "titre": "Où se former ?",
-      "chapeau": "**1 055 places** en première année de master, réparties dans **19 universités**.",
+      "chapeau": "**1 055 places** de première année, réparties sur **dix régions**.",
       "items": [
-        { "icone": "temple", "titre": "Sans contrat d'entreprise", "detail": "Toulouse Capitole, Toulouse, Bordeaux, Lorraine, Paris 1, Haute-Alsace, Lyon 1" },
-        { "icone": "temple", "titre": "Les deux formules", "detail": "PSL, Paris-Saclay, Paris Cité, Nanterre, Côte d'Azur, Rennes, Orléans, Grenoble, Lille, Picardie" },
-        { "icone": "alerte", "titre": "Alternance uniquement", "detail": "Aix-Marseille et Nantes. Sans entreprise, pas d'inscription.", "cle": true }
+        {
+          "icone": "temple",
+          "titre": "306 places en Île-de-France",
+          "detail": "Près de trois sur dix, dans la région la plus chère"
+        },
+        {
+          "icone": "temple",
+          "titre": "749 places ailleurs",
+          "detail": "Souvent dans des villes où le loyer est deux fois moins élevé"
+        },
+        {
+          "icone": "alerte",
+          "titre": "2 universités n'ouvrent qu'en alternance",
+          "detail": "Sans contrat d'entreprise, la candidature n'existe pas",
+          "cle": true
+        },
+        {
+          "icone": "check",
+          "titre": "7 recrutent sans contrat",
+          "detail": "Plus de 300 places. Nous vous disons lesquelles vous correspondent."
+        }
       ]
     },
     {

@@ -94,32 +94,27 @@
       "type": "liste",
       "fichier": "ou-se-former",
       "titre": "Où se former ?",
-      "chapeau": "**25 parcours** en France, dont **8 seulement** portent l'intitulé exact.",
+      "chapeau": "**25 parcours** en France, sur **dix régions**.",
       "items": [
         {
           "icone": "temple",
-          "titre": "Île-de-France",
-          "detail": "PSL, Paris 1 Panthéon-Sorbonne, Paris 8, Sorbonne Université, CY Cergy, Cnam"
+          "titre": "10 en Île-de-France",
+          "detail": "Là où le logement coûte le plus cher"
         },
         {
           "icone": "temple",
-          "titre": "Hauts-de-France",
-          "detail": "Université Polytechnique Hauts-de-France, Institut catholique de Lille"
+          "titre": "5 dans les Hauts-de-France",
+          "detail": "Pour un budget mensuel nettement inférieur"
         },
         {
           "icone": "temple",
-          "titre": "Auvergne-Rhône-Alpes",
-          "detail": "ENS de Lyon, Université Lumière Lyon 2"
-        },
-        {
-          "icone": "temple",
-          "titre": "Et aussi",
-          "detail": "Rennes 2, Rouen, Tours, Bordeaux Montaigne, Montpellier 3, La Réunion"
+          "titre": "10 ailleurs en France",
+          "detail": "De la Bretagne à l'Occitanie, et jusqu'à La Réunion"
         },
         {
           "icone": "alerte",
-          "titre": "Choisissez le parcours, pas la mention",
-          "detail": "Deux masters au même nom ne mènent pas au même métier",
+          "titre": "8 seulement portent ce nom exact",
+          "detail": "Les 17 autres s'appellent autrement et mènent à d'autres métiers",
           "cle": true
         }
       ]

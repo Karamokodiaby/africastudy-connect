@@ -1,0 +1,107 @@
+{
+  "id": "carte-humanites-numeriques",
+  "titre_accessible": "Carte de France des masters Humanités numériques",
+  "description_accessible": "Vingt-cinq parcours répartis sur neuf régions. La plus forte concentration se situe en Île-de-France, avec dix parcours, suivie des Hauts-de-France avec cinq.",
+  "villes": [
+    {
+      "nom": "Paris",
+      "lon": 2.35,
+      "lat": 48.86,
+      "poids": 10,
+      "cle": true
+    },
+    {
+      "nom": "Lille",
+      "lon": 3.06,
+      "lat": 50.63,
+      "poids": 5
+    },
+    {
+      "nom": "Lyon",
+      "lon": 4.84,
+      "lat": 45.76,
+      "poids": 2
+    },
+    {
+      "nom": "Bordeaux",
+      "lon": -0.58,
+      "lat": 44.84,
+      "poids": 2
+    },
+    {
+      "nom": "Rennes",
+      "lon": -1.68,
+      "lat": 48.11,
+      "poids": 1
+    },
+    {
+      "nom": "Rouen",
+      "lon": 1.1,
+      "lat": 49.44,
+      "poids": 1
+    },
+    {
+      "nom": "Tours",
+      "lon": 0.69,
+      "lat": 47.39,
+      "poids": 1
+    },
+    {
+      "nom": "Montpellier",
+      "lon": 3.88,
+      "lat": 43.61,
+      "poids": 1
+    },
+    {
+      "nom": "Besancon",
+      "lon": 6.02,
+      "lat": 47.24,
+      "poids": 1
+    }
+  ],
+  "regions": [
+    {
+      "nom": "Île-de-France",
+      "nb": 10
+    },
+    {
+      "nom": "Hauts-de-France",
+      "nb": 5
+    },
+    {
+      "nom": "Auvergne-Rhône-Alpes",
+      "nb": 2
+    },
+    {
+      "nom": "Nouvelle-Aquitaine",
+      "nb": 2
+    },
+    {
+      "nom": "Bretagne",
+      "nb": 1
+    },
+    {
+      "nom": "Normandie",
+      "nb": 1
+    },
+    {
+      "nom": "Centre-Val de Loire",
+      "nb": 1
+    },
+    {
+      "nom": "Occitanie",
+      "nb": 1
+    },
+    {
+      "nom": "Bourgogne-Franche-Comté",
+      "nb": 1
+    },
+    {
+      "nom": "La Réunion",
+      "nb": 1
+    }
+  ],
+  "total_attendu": 25,
+  "hors_metropole": 1,
+  "note_hors_metropole": "Un parcours supplémentaire est proposé à La Réunion, hors de la carte métropolitaine."
+}

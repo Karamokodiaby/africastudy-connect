@@ -1,0 +1,136 @@
+{
+  "id": "carte-miage",
+  "titre_accessible": "Carte de France des masters MIAGE",
+  "description_accessible": "Environ 1 055 places de première année réparties sur dix régions. La plus forte concentration se situe en Île-de-France, avec 306 places.",
+  "villes": [
+    {
+      "nom": "Paris",
+      "lon": 2.35,
+      "lat": 48.86,
+      "poids": 306,
+      "cle": true
+    },
+    {
+      "nom": "Toulouse",
+      "lon": 1.44,
+      "lat": 43.6,
+      "poids": 116
+    },
+    {
+      "nom": "Nice",
+      "lon": 7.27,
+      "lat": 43.7,
+      "poids": 75
+    },
+    {
+      "nom": "Marseille",
+      "lon": 5.37,
+      "lat": 43.3,
+      "poids": 60
+    },
+    {
+      "nom": "Nancy",
+      "lon": 6.18,
+      "lat": 48.69,
+      "poids": 70
+    },
+    {
+      "nom": "Mulhouse",
+      "lon": 7.34,
+      "lat": 47.75,
+      "poids": 35
+    },
+    {
+      "nom": "Amiens",
+      "lon": 2.3,
+      "lat": 49.89,
+      "poids": 70
+    },
+    {
+      "nom": "Lille",
+      "lon": 3.06,
+      "lat": 50.63,
+      "poids": 32
+    },
+    {
+      "nom": "Rennes",
+      "lon": -1.68,
+      "lat": 48.11,
+      "poids": 65
+    },
+    {
+      "nom": "Grenoble",
+      "lon": 5.72,
+      "lat": 45.19,
+      "poids": 51
+    },
+    {
+      "nom": "Lyon",
+      "lon": 4.84,
+      "lat": 45.76,
+      "poids": 20
+    },
+    {
+      "nom": "Orleans",
+      "lon": 1.9,
+      "lat": 47.9,
+      "poids": 65
+    },
+    {
+      "nom": "Bordeaux",
+      "lon": -0.58,
+      "lat": 44.84,
+      "poids": 51
+    },
+    {
+      "nom": "Nantes",
+      "lon": -1.55,
+      "lat": 47.22,
+      "poids": 39
+    }
+  ],
+  "regions": [
+    {
+      "nom": "Île-de-France",
+      "nb": 306
+    },
+    {
+      "nom": "Occitanie",
+      "nb": 116
+    },
+    {
+      "nom": "Provence-Alpes-Côte d'Azur",
+      "nb": 135
+    },
+    {
+      "nom": "Grand Est",
+      "nb": 105
+    },
+    {
+      "nom": "Hauts-de-France",
+      "nb": 102
+    },
+    {
+      "nom": "Auvergne-Rhône-Alpes",
+      "nb": 71
+    },
+    {
+      "nom": "Bretagne",
+      "nb": 65
+    },
+    {
+      "nom": "Centre-Val de Loire",
+      "nb": 65
+    },
+    {
+      "nom": "Nouvelle-Aquitaine",
+      "nb": 51
+    },
+    {
+      "nom": "Pays de la Loire",
+      "nb": 39
+    }
+  ],
+  "unite": "places",
+  "total_attendu": 1055
+}
