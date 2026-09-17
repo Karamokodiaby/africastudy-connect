@@ -1,0 +1,67 @@
+{
+  "slug": "rapport-senat-943",
+  "titre": "Rapport du Sénat n° 943",
+  "tagline": "S'informer, puis décider.",
+  "slides": [
+    {
+      "type": "couverture",
+      "fichier": "couverture",
+      "titre": ["Rapport", "du Sénat"],
+      "surligne": [1],
+      "accroche": "Ce qui pourrait changer pour les étudiants africains. Et ce qui ne change rien aujourd'hui."
+    },
+    {
+      "type": "texte",
+      "fichier": "de-quoi-s-agit-il",
+      "titre": "De quoi s'agit-il ?",
+      "paragraphes": [
+        "Le **7 septembre 2026**, une commission d'enquête du Sénat a rendu son rapport sur l'université française.",
+        "Titre : **Universités : assumer l'excellence**. Numéro 943. Dix recommandations, dont deux visent directement les étudiants internationaux.",
+        "Ce n'est **ni une loi ni un décret**. Rien n'est en vigueur, et rien ne s'applique à la rentrée 2027."
+      ]
+    },
+    {
+      "type": "chiffre",
+      "fichier": "le-chiffre-a-connaitre",
+      "titre": "Le chiffre",
+      "chiffre": "28 %",
+      "legende": "des étudiants venus d'**Afrique** obtiennent leur licence en France en trois ou quatre ans. Les étudiants d'**Asie et d'Océanie** sont à 47 %.",
+      "source": "Étudiants internationaux entrés pour la première fois en 2020-2021.",
+      "conclusion": "L'écart ne tient pas au niveau. Il tient à **l'orientation décidée à distance** et au budget sous-évalué.",
+      "bouton": "Lire notre analyse"
+    },
+    {
+      "type": "liste",
+      "fichier": "recommandation-6",
+      "titre": "Recommandation 6",
+      "chapeau": "Piloter l'accueil des étudiants internationaux, en privilégiant :",
+      "items": [
+        { "icone": "loupe", "titre": "Les régions sous-représentées", "detail": "Asie-Océanie et Amériques. L'Afrique pèse déjà 26 % des effectifs." },
+        { "icone": "toque", "titre": "Le master et le doctorat", "detail": "Plutôt que la licence" },
+        { "icone": "document", "titre": "Un français mieux certifié", "detail": "Le rapport juge le contrôle actuel insuffisant" },
+        { "icone": "euro", "titre": "Des ressources plus élevées", "detail": "Le seuil de 857 € par mois est jugé trop bas" }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "les-droits-d-inscription",
+      "titre": "Et les frais ?",
+      "chapeau": "La recommandation 7 propose **900 € en licence** et **1 300 € en master**.",
+      "items": [
+        { "icone": "euro", "titre": "Ce n'est pas la menace", "detail": "Vous payez déjà 2 902 € et 3 950 € au tarif différencié" },
+        { "icone": "alerte", "titre": "La vraie menace est la reco 6", "detail": "Beaucoup d'universités n'appliquent pas les droits différenciés. Le rapport le leur reproche.", "cle": true },
+        { "icone": "donnees", "titre": "Si l'exonération tombait", "detail": "Un master passerait de 167 000 à 2 591 000 FCFA" }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "fichier": "ce-qu-il-faut-faire",
+      "titre": "Que faire ?",
+      "chiffre": "Rien ne change",
+      "legende": "**aujourd'hui**. Une candidature déposée pour 2027 suit les règles actuelles. Les publications qui annoncent une fermeture imminente sont **fausses**.",
+      "source": "Un rapport de commission d'enquête formule des recommandations, pas des règles.",
+      "conclusion": "Ce qu'il faut en tirer : **des dossiers plus solides, plus tôt et mieux ciblés**. Pas un renoncement.",
+      "bouton": "Étude de profil gratuite"
+    }
+  ]
+}

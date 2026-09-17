@@ -41,6 +41,7 @@ Ni taux de réussite visa, ni promesse d'admission, ni nom d'établissement part
 |---|---|---|
 | Master Humanités numériques | `master-humanites-numeriques/` | `/blog/master-humanites-numeriques-etudiants-afrique-ouest` |
 | Master MIAGE | `master-miage/` | `/blog/miage-etudiants-afrique-ouest` |
+| Rapport du Sénat n° 943 | `rapport-senat-943/` | `/blog/rapport-senat-943-etudiants-etrangers-france` |
 
 ## Publier
 
