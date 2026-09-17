@@ -1,0 +1,138 @@
+{
+  "slug": "master-humanites-numeriques",
+  "titre": "Master Humanités numériques",
+  "tagline": "S'informer, puis décider.",
+  "slides": [
+    {
+      "type": "couverture",
+      "fichier": "couverture",
+      "titre": [
+        "Humanités",
+        "numériques"
+      ],
+      "surligne": [
+        1
+      ],
+      "accroche": "Le master qui transforme une licence de lettres en compétence recherchée."
+    },
+    {
+      "type": "texte",
+      "fichier": "de-quoi-s-agit-il",
+      "titre": "De quoi s'agit-il ?",
+      "paragraphes": [
+        "Un master de **niveau bac+5**, préparé en **deux ans** après une licence.",
+        "Il croise les méthodes des **sciences humaines et sociales** avec les outils du **numérique** : bases de données, numérisation, analyse de corpus, visualisation.",
+        "Ce n'est pas une formation d'informaticien. C'est une formation en sciences humaines qui sait manipuler la technique."
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "pour-qui",
+      "titre": "Pour qui ?",
+      "chapeau": "La formation s'adresse aux titulaires d'une licence en :",
+      "items": [
+        {
+          "icone": "check",
+          "titre": "Lettres et langues",
+          "detail": "Lettres modernes, lettres classiques, LLCER, LEA"
+        },
+        {
+          "icone": "check",
+          "titre": "Histoire et histoire de l'art"
+        },
+        {
+          "icone": "check",
+          "titre": "Sciences humaines et sociales",
+          "detail": "Sociologie, anthropologie, géographie, philosophie"
+        },
+        {
+          "icone": "check",
+          "titre": "Information et communication"
+        },
+        {
+          "icone": "alerte",
+          "titre": "L'admission reste sélective",
+          "detail": "Chaque établissement fixe ses propres prérequis",
+          "cle": true
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "quels-debouches",
+      "titre": "Quels débouchés ?",
+      "chapeau": "Selon le parcours choisi, les diplômés travaillent dans :",
+      "items": [
+        {
+          "icone": "temple",
+          "titre": "Culture et patrimoine",
+          "detail": "Musées, bibliothèques, archives, numérisation de fonds"
+        },
+        {
+          "icone": "ecran",
+          "titre": "Information et documentation",
+          "detail": "Gestion de contenus numériques, édition en ligne"
+        },
+        {
+          "icone": "megaphone",
+          "titre": "Communication",
+          "detail": "Médiation culturelle, communication éditoriale"
+        },
+        {
+          "icone": "donnees",
+          "titre": "Données et valorisation",
+          "detail": "Structuration, analyse et visualisation de corpus"
+        },
+        {
+          "icone": "loupe",
+          "titre": "Recherche et enseignement",
+          "detail": "Ingénierie de projet, laboratoires, doctorat"
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "ou-se-former",
+      "titre": "Où se former ?",
+      "chapeau": "**25 parcours** en France, dont **8 seulement** portent l'intitulé exact.",
+      "items": [
+        {
+          "icone": "temple",
+          "titre": "Île-de-France",
+          "detail": "PSL, Paris 1 Panthéon-Sorbonne, Paris 8, Sorbonne Université, CY Cergy, Cnam"
+        },
+        {
+          "icone": "temple",
+          "titre": "Hauts-de-France",
+          "detail": "Université Polytechnique Hauts-de-France, Institut catholique de Lille"
+        },
+        {
+          "icone": "temple",
+          "titre": "Auvergne-Rhône-Alpes",
+          "detail": "ENS de Lyon, Université Lumière Lyon 2"
+        },
+        {
+          "icone": "temple",
+          "titre": "Et aussi",
+          "detail": "Rennes 2, Rouen, Tours, Bordeaux Montaigne, Montpellier 3, La Réunion"
+        },
+        {
+          "icone": "alerte",
+          "titre": "Choisissez le parcours, pas la mention",
+          "detail": "Deux masters au même nom ne mènent pas au même métier",
+          "cle": true
+        }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "fichier": "ce-que-cela-change-pour-vous",
+      "titre": "Le chiffre à connaître",
+      "chiffre": "28 %",
+      "legende": "des étudiants venus d'**Afrique** obtiennent leur licence en France en trois ou quatre ans. Les étudiants d'**Asie et d'Océanie** sont à 47 %.",
+      "source": "Sénat, rapport de commission d'enquête n° 943, 7 septembre 2026.",
+      "conclusion": "L'écart ne tient pas au niveau des étudiants. Il tient à **l'orientation décidée à distance** et au budget sous-évalué. C'est là que nous intervenons.",
+      "bouton": "Étude de profil gratuite"
+    }
+  ]
+}
