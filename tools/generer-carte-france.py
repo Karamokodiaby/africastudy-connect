@@ -102,7 +102,10 @@ def legende(cfg):
             f'  <div class="carte-legende-item"><span class="carte-legende-nb">{r["nb"]}</span>'
             f'<span class="carte-legende-nom">{r["nom"]}</span></div>')
     lignes.append('</div>')
-    if cfg.get("hors_metropole"):
+    # L'outre-mer compte dans le total mais n'a pas de point sur la carte
+    # métropolitaine. La note est facultative : quand l'article rédige la
+    # sienne, il l'y intègre lui-même plutôt que d'en afficher deux.
+    if cfg.get("note_hors_metropole"):
         lignes.append(f'<p class="carte-note">{cfg["note_hors_metropole"]}</p>')
     return "\n".join(lignes)
 

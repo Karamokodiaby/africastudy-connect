@@ -1,0 +1,70 @@
+{
+  "slug": "master-economie",
+  "titre": "Master en économie",
+  "tagline": "S'informer, puis décider.",
+  "slides": [
+    {
+      "type": "couverture",
+      "fichier": "couverture",
+      "titre": ["Master en", "économie"],
+      "surligne": [1],
+      "accroche": "Il n'existe pas. Il existe une famille de mentions, et le choix se fait avant la candidature."
+    },
+    {
+      "type": "texte",
+      "fichier": "de-quoi-s-agit-il",
+      "titre": "L'erreur à éviter",
+      "paragraphes": [
+        "En France, un master porte une **mention**, l'intitulé national du diplôme, puis un **parcours**, la spécialisation propre à l'université.",
+        "L'économie n'est pas une mention. C'est un domaine qui en regroupe plusieurs, et qui totalise **plus de 120 parcours**.",
+        "Postuler « en économie » sans choisir sa mention, c'est se disperser sur 120 parcours et **n'en convaincre aucun**."
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "les-trois-mentions",
+      "titre": "Les 3 mentions",
+      "chapeau": "Elles concentrent l'essentiel de l'offre :",
+      "items": [
+        { "icone": "euro", "titre": "Monnaie, banque, finance, assurance", "detail": "Environ 78 parcours. La plus professionnalisante." },
+        { "icone": "donnees", "titre": "Économie appliquée", "detail": "Environ 24 parcours. L'économie au service d'un secteur." },
+        { "icone": "loupe", "titre": "Économie", "detail": "Environ 21 parcours. La plus théorique, voie vers le doctorat." },
+        { "icone": "alerte", "titre": "Aucune n'est meilleure", "detail": "Elles ne mènent simplement pas aux mêmes métiers", "cle": true }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "les-specialisations",
+      "titre": "Quelle spécialité ?",
+      "chapeau": "Notre avis franc sur les quatre plus demandées :",
+      "items": [
+        { "icone": "euro", "titre": "Banque, finance, assurance", "detail": "La plus lisible pour un emploi en France comme au pays" },
+        { "icone": "temple", "titre": "Économie de la santé", "detail": "Niche étroite mais peu concurrencée. Très pertinente pour la sous-région." },
+        { "icone": "document", "titre": "Finance durable", "detail": "En croissance, mais peu de postes. À viser en M2, pas en M1." },
+        { "icone": "alerte", "titre": "Économie internationale", "detail": "Les postes en organisation internationale se gagnent après des années, pas à la sortie.", "cle": true }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "ou-se-former",
+      "titre": "Où se former ?",
+      "chapeau": "**Plus de 120 parcours**, sur **quatorze régions**.",
+      "items": [
+        { "icone": "temple", "titre": "28 en Île-de-France", "detail": "Moins d'un quart du total, dans la région la plus chère" },
+        { "icone": "temple", "titre": "18 en Occitanie", "detail": "La deuxième concentration du pays, et on ne s'y attend pas" },
+        { "icone": "temple", "titre": "Le reste en région", "detail": "Souvent des promotions plus petites et un suivi plus direct" },
+        { "icone": "alerte", "titre": "Ne regarder que Paris", "detail": "C'est ignorer les trois quarts de l'offre, et viser les dossiers les plus concurrentiels", "cle": true }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "fichier": "le-vrai-filtre",
+      "titre": "Le vrai filtre",
+      "chiffre": "Les maths",
+      "legende": "Ces masters sont **quantitatifs** : statistique inférentielle, **économétrie**, optimisation, probabilités. C'est le motif de refus le plus fréquent.",
+      "source": "Un dossier peut être refusé sur ce seul point, malgré une bonne moyenne générale.",
+      "conclusion": "Nous examinons le **contenu réel de vos unités d'enseignement**, pas leurs intitulés. Et nous le disons avant que vous payiez des frais de candidature.",
+      "bouton": "Étude de profil gratuite"
+    }
+  ]
+}

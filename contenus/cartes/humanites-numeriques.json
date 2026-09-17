@@ -102,6 +102,5 @@
     }
   ],
   "total_attendu": 25,
-  "hors_metropole": 1,
-  "note_hors_metropole": "Un parcours supplémentaire est proposé à La Réunion, hors de la carte métropolitaine."
+  "hors_metropole": 1
 }

@@ -1,0 +1,177 @@
+{
+  "id": "carte-economie",
+  "unite": "parcours",
+  "total_attendu": 123,
+  "hors_metropole": 8,
+  "titre_accessible": "Carte de France des masters d'économie",
+  "description_accessible": "Plus de cent vingt parcours répartis sur quatorze régions. La plus forte concentration se situe en Île-de-France, avec vingt-huit parcours, suivie de l'Occitanie avec dix-huit.",
+  "villes": [
+    {
+      "nom": "Paris",
+      "lon": 2.35,
+      "lat": 48.86,
+      "poids": 28,
+      "cle": true
+    },
+    {
+      "nom": "Montpellier",
+      "lon": 3.88,
+      "lat": 43.61,
+      "poids": 12
+    },
+    {
+      "nom": "Toulouse",
+      "lon": 1.44,
+      "lat": 43.6,
+      "poids": 6
+    },
+    {
+      "nom": "Caen",
+      "lon": -0.37,
+      "lat": 49.18,
+      "poids": 6
+    },
+    {
+      "nom": "Rouen",
+      "lon": 1.1,
+      "lat": 49.44,
+      "poids": 5
+    },
+    {
+      "nom": "Nancy",
+      "lon": 6.18,
+      "lat": 48.69,
+      "poids": 6
+    },
+    {
+      "nom": "Strasbourg",
+      "lon": 7.75,
+      "lat": 48.58,
+      "poids": 4
+    },
+    {
+      "nom": "Bordeaux",
+      "lon": -0.58,
+      "lat": 44.84,
+      "poids": 5
+    },
+    {
+      "nom": "Poitiers",
+      "lon": 0.34,
+      "lat": 46.58,
+      "poids": 4
+    },
+    {
+      "nom": "Lille",
+      "lon": 3.06,
+      "lat": 50.63,
+      "poids": 9
+    },
+    {
+      "nom": "Nantes",
+      "lon": -1.55,
+      "lat": 47.22,
+      "poids": 8
+    },
+    {
+      "nom": "Rennes",
+      "lon": -1.68,
+      "lat": 48.11,
+      "poids": 6
+    },
+    {
+      "nom": "Dijon",
+      "lon": 5.04,
+      "lat": 47.32,
+      "poids": 5
+    },
+    {
+      "nom": "Lyon",
+      "lon": 4.84,
+      "lat": 45.76,
+      "poids": 4
+    },
+    {
+      "nom": "Marseille",
+      "lon": 5.37,
+      "lat": 43.3,
+      "poids": 2
+    },
+    {
+      "nom": "Nice",
+      "lon": 7.27,
+      "lat": 43.7,
+      "poids": 2
+    },
+    {
+      "nom": "Orleans",
+      "lon": 1.9,
+      "lat": 47.9,
+      "poids": 2
+    },
+    {
+      "nom": "Ajaccio",
+      "lon": 8.74,
+      "lat": 41.93,
+      "poids": 1
+    }
+  ],
+  "regions": [
+    {
+      "nom": "Île-de-France",
+      "nb": 28
+    },
+    {
+      "nom": "Occitanie",
+      "nb": 18
+    },
+    {
+      "nom": "Normandie",
+      "nb": 11
+    },
+    {
+      "nom": "Grand Est",
+      "nb": 10
+    },
+    {
+      "nom": "Nouvelle-Aquitaine",
+      "nb": 9
+    },
+    {
+      "nom": "Hauts-de-France",
+      "nb": 9
+    },
+    {
+      "nom": "Outre-mer",
+      "nb": 8
+    },
+    {
+      "nom": "Pays de la Loire",
+      "nb": 8
+    },
+    {
+      "nom": "Bretagne",
+      "nb": 6
+    },
+    {
+      "nom": "Bourgogne-Franche-Comté",
+      "nb": 5
+    },
+    {
+      "nom": "Auvergne-Rhône-Alpes",
+      "nb": 4
+    },
+    {
+      "nom": "Provence-Alpes-Côte d'Azur",
+      "nb": 4
+    },
+    {
+      "nom": "Centre-Val de Loire",
+      "nb": 2
+    },
+    {
+      "nom": "Corse",
+      "nb": 1
+    }
+  ]
+}
