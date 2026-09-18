@@ -53,6 +53,7 @@ python3 tools/generer-carte-france.py contenus/cartes/NOM.json
 | Master MIAGE | `master-miage/` | `/blog/miage-etudiants-afrique-ouest` |
 | Rapport du Sénat n° 943 | `rapport-senat-943/` | `/blog/rapport-senat-943-etudiants-etrangers-france` |
 | Master en économie | `master-economie/` | `/blog/master-economie-etudiants-afrique-ouest` |
+| Master de psychologie | `master-psychologie/` | `/blog/master-psychologie-etudiants-afrique-ouest` |
 
 ## Publier
 

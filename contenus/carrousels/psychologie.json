@@ -1,0 +1,69 @@
+{
+  "slug": "master-psychologie",
+  "titre": "Master de psychologie",
+  "tagline": "S'informer, puis décider.",
+  "slides": [
+    {
+      "type": "couverture",
+      "fichier": "couverture",
+      "titre": ["Devenir", "psychologue"],
+      "surligne": [1],
+      "accroche": "En France, ce titre est protégé par la loi. Voici ce qu'il exige vraiment."
+    },
+    {
+      "type": "chiffre",
+      "fichier": "le-titre-est-protege",
+      "titre": "La règle",
+      "chiffre": "Titre protégé",
+      "legende": "Loi du **25 juillet 1985**. Se dire psychologue sans y avoir droit est **illégal** en France.",
+      "source": "Article 44 de la loi n° 85-772 du 25 juillet 1985.",
+      "conclusion": "Aucun certificat en ligne, aucun titre de praticien ou de coach ne donne ce droit. **Seul un master de psychologie le donne.**",
+      "bouton": "Lire notre analyse"
+    },
+    {
+      "type": "liste",
+      "fichier": "les-trois-conditions",
+      "titre": "3 conditions",
+      "chapeau": "Elles se cumulent. Il en manque une, il n'y a pas de titre.",
+      "items": [
+        { "icone": "toque", "titre": "Une licence de psychologie", "detail": "Puis un master de psychologie. Les deux dans cette discipline." },
+        { "icone": "document", "titre": "500 heures de stage encadré", "detail": "Environ quatre mois à temps plein, agréés par l'université" },
+        { "icone": "temple", "titre": "Un enregistrement en France", "detail": "Auprès de l'agence régionale de santé, qui attribue un numéro" },
+        { "icone": "alerte", "titre": "Une école privée ne suffit pas", "detail": "Faites confirmer par écrit que le diplôme est bien un master de psychologie", "cle": true }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "le-piege-du-stage",
+      "titre": "Le stage",
+      "chapeau": "C'est là que les projets internationaux se bloquent.",
+      "items": [
+        { "icone": "loupe", "titre": "Le terrain ne vous est pas fourni", "detail": "Il faut convaincre un hôpital, une école ou une institution de vous accueillir" },
+        { "icone": "check", "titre": "Un référent à trois ans d'exercice", "detail": "Psychologue praticien, plus un enseignant-chercheur du master" },
+        { "icone": "alerte", "titre": "Un an après la théorie, au plus tard", "detail": "Si le master finit avant le stage, il faut pouvoir rester. Cela se prépare avant le départ.", "cle": true },
+        { "icone": "donnees", "titre": "Il peut se faire à l'étranger", "detail": "Sous réserve d'agrément. Cette piste a débloqué plusieurs de nos dossiers." }
+      ]
+    },
+    {
+      "type": "liste",
+      "fichier": "ou-se-former",
+      "titre": "Où se former ?",
+      "chapeau": "Environ **172 parcours**, dans **27 villes**.",
+      "items": [
+        { "icone": "temple", "titre": "L'Occitanie devant Paris", "detail": "25 parcours contre 23, et un loyer bien inférieur" },
+        { "icone": "temple", "titre": "20 dans les Hauts-de-France", "detail": "La troisième concentration du pays" },
+        { "icone": "alerte", "titre": "Ne regarder que Paris", "detail": "C'est se priver de près de neuf parcours sur dix", "cle": true }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "fichier": "notre-avis",
+      "titre": "Notre avis",
+      "chiffre": "Une licence",
+      "legende": "**de psychologie** est indispensable. Sociologie, sciences de l'éducation ou lettres ne mènent **pas** en master de psychologie.",
+      "source": "La discipline compte autant que le niveau du dossier.",
+      "conclusion": "Mieux vaut l'entendre maintenant que **deux ans et plusieurs millions de francs CFA plus tard**. Nous le disons franchement.",
+      "bouton": "Étude de profil gratuite"
+    }
+  ]
+}
