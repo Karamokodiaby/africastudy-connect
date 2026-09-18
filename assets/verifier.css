@@ -1,0 +1,77 @@
+/* Page de vérification des cachets d'authenticité. */
+.verif-carte {
+    overflow-wrap: break-word;
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 2.5rem;
+    border-left: 6px solid #64748b;
+    background: #f1f5f9;
+}
+.verif-carte.verif-attente { border-left-color: #64748b; }
+.verif-carte.verif-ok      { border-left-color: #15803d; background: #f0fdf4; }
+.verif-carte.verif-ko      { border-left-color: #b91c1c; background: #fef2f2; }
+.verif-carte.verif-vide    { border-left-color: #2563eb; background: #eff6ff; }
+
+.verif-etat {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin: 0 0 .35rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+.verif-ok .verif-etat { color: #15803d; }
+.verif-ko .verif-etat { color: #b91c1c; }
+.verif-vide .verif-etat { color: #2563eb; }
+
+.verif-detail {
+    margin: .25rem 0 0;
+    color: #475569;
+    font-size: .95rem;
+    overflow-wrap: anywhere;
+}
+
+.verif-champs {
+    width: 100%;
+    margin: 1.25rem 0 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.verif-champs th,
+.verif-champs td { text-align: left; padding: .55rem .75rem; border-bottom: 1px solid #e2e8f0; font-size: .95rem; }
+.verif-champs th { width: 38%; color: #475569; font-weight: 600; }
+.verif-champs td { color: #0f172a; font-weight: 600; overflow-wrap: anywhere; }
+.verif-champs tr:last-child th,
+.verif-champs tr:last-child td { border-bottom: none; }
+
+.verif-cle {
+    display: block;
+    word-break: break-all;
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: .75rem 1rem;
+    border-radius: 8px;
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .verif-carte {
+    overflow-wrap: break-word; padding: 1.25rem 1rem; }
+    .verif-champs th { width: 42%; }
+}
+
+/* La feuille globale passe les tableaux de .legal-content en bandeau défilant
+   sur mobile. C'est utile pour un tableau large, pas pour cette fiche de
+   quelques champs : on la garde en tableau normal, qui revient à la ligne. */
+@media (max-width: 768px) {
+    .legal-content .verif-champs {
+        display: table;
+        overflow-x: visible;
+        white-space: normal;
+    }
+    .legal-content .verif-champs th,
+    .legal-content .verif-champs td {
+        white-space: normal;
+    }
+}
